@@ -1,25 +1,412 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Hey!!!!!!!!!!!!!!!!!!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Welcome to Me</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
 
-    <section class="main-content">
-      <h3> 
+<head>
+	<style>
+	/*Navigation bar */
+		.navbar { margin: 1px; font-family: 'Arial', sans-serif !important; background-color: #F26398 !important;  min-height: 20px !important;}
+		.navbar-brand { font-weight: 2000; font-size: 16px; }
+		.navbar-default a { color: Black !important; }
+		.navbar-default a:hover { background: #F4B1F5 !important; }
+		.navbar-custom a:hover { background: #F4B1F5 !important; }
+		.navbar-nav a { font-weight: 2000; font-size: 16px; padding-top: 14px !important; padding-bottom: 14px !important;}
+		.navbar-wrapper { position: relative; z-index: 15; }
+		.navbar-wrapper .container { position: relative; top: 20px; left: 0; }
 
-    </section>
 
-  
-  </body>
-</html>
+  /*Website title */
+  #title{
+    background-color: White;
+        	text-align: center;
+    	padding-left:4%;
+    	padding-top:3%;
+  }
+  .row {
+  	padding-left: 60px;
+  }
+  /*Search bar css */
+
+			  #tfheader{
+		    background-color:#F26398;
+		  	}
+		  #tfnewsearch{
+		    float:right;
+		    padding-top: 5px;
+		    padding-left: 20px;
+		  }
+		  .tftextinput{
+		    margin: 0;
+		    padding: 5px 15px;
+		    font-family: Arial, Helvetica, sans-serif;
+		    font-size:14px;
+		    border:1px solid #0076a3; border-right:0px;
+		    border-top-left-radius: 5px 5px;
+		    border-bottom-left-radius: 5px 5px;
+		  }
+		  .tfbutton {
+		    margin: 0;
+		    padding: 5px 15px;
+		    font-family: Arial, Helvetica, sans-serif;
+		    font-size:14px;
+		    outline: none;
+		    cursor: pointer;
+		    text-align: center;
+		    text-decoration: none;
+		    color: #ffffff;
+		    border: solid 1px #0076a3; border-right:0px;
+		    background: #0095cd;
+		    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		    border-top-right-radius: 5px 5px;
+		    border-bottom-right-radius: 5px 5px;
+		  }
+		  .tfbutton:hover {
+		    text-decoration: none;
+		    background: #007ead;
+		    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+		  }
+		  /* Fixes submit button height problem in Firefox */
+		  .tfbutton::-moz-focus-inner {
+		    border: 0;
+
+		  }
+		  .tfclear{
+		    clear:both;
+		  }
+	/*Text body*/
+    #textBody{
+      margin-left: 10%;
+      margin-right: 15%;
+      font-family: Verdana;
+    }
+    #pText{
+    	padding-left:5em;
+    }
+    #textind{
+    	margin-left: 40px;
+    }
+
+     #footer {
+       margin-left: 5%;
+       padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 17px;
+      color: Black;
+    }
+</style>
+<!-- Bootstrap code -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!--tab icon -->
+	  <link rel="shortcut icon" type="image/x-icon" href="
+	 http://icons.veryicon.com/png/System/Farm%20Fresh/world.png" />
+</head>
+<body >
+<!--Top of page navigation bar-->
+ <nav class="navbar navbar-custom">
+ <div class="container">
+  <ul class="nav navbar-nav navbar-right">
+	  <!-- Trigger the modal with a button -->
+	  <li>
+	  <button id="#about" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#about">About</button>
+	  </li>  
+	  <li></li>
+	  <li>
+	  <button id = "contact" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#contact">Contact</button>
+	  </li>
+  </ul>
+		  <!-- About Modal -->
+		  <div class="modal fade" id="about" role="dialog">
+		    <div class="modal-dialog">
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">About</h4>
+		        </div>
+		        <div class="modal-body">
+		          <p>hi u R a doof.</p>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+
+		    <!-- Contact Modal -->
+		  <div class="modal fade" id="contact" role="dialog">
+		    <div class="modal-dialog">
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Contact</h4>
+		        </div>
+		        <div class="modal-body">
+		          <p>hi i Am a doof u can reach me at 231o23uo1.</p>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+      
+</nav>
+
+<!-- -->
+<!-- -->
+<div id="wholeSite"> <!--Entire site div-->
+	<!--ABECEDARIAN title-->
+    <div id=title>
+      <a href="#home"><img src = "https://s31.postimg.org/bg0ch6brf/name.png" padding-left= "10px"><img src = "https://s31.postimg.org/511bki51n/com.png"></a></li>
+        <br><br>
+        <p font-family="Arial"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <i>ABECEDARIAN: Defined as one learning the rudiments of something (as the alphabet) - Merriam Webster</i></p>
+      </div>
+      <!--alphabet and search bar navigation bar-->
+      <nav class="navbar transparent navbar-default navbar-static-top">
+		  <div class="container-fluid">
+		    <div>
+		      <ul class="nav navbar-nav">
+		        <li><a href="#A"><span>A</span></a></li> 
+		        <li><a href="#B"><span>B</span></a></li>
+		        <li><a href="#C"><span>C</span></a></li>
+		        <li><a href="#D"><span>D</span></a></li>
+		        <li><a href="#E"><span>E</span></a></li>
+		        <li><a href="#F"><span>F</span></a></li>
+		        <li><a href="#G"><span>G</span></a></li>
+		        <li><a href="#H"><span>H</span></a></li>
+		        <li><a href="#I"><span>I</span></a></li>
+		        <li><a href="#J"><span>J</span></a></li>
+		        <li><a href="#K"><span>K</span></a></li>
+		        <li><a href="#L"><span>L</span></a></li>
+		        <li><a href="#M"><span>M</span></a></li>
+		        <li><a href="#N"><span>N</span></a></li>
+		        <li><a href="#O"><span>O</span></a></li>
+		        <li><a href="#P"><span>P</span></a></li>
+		        <li><a href="#Q"><span>Q</span></a></li>
+		        <li><a href="#R"><span>R</span></a></li>
+		        <li><a href="#S"><span>S</span></a></li>
+		        <li><a href="#T"><span>T</span></a></li>
+		        <li><a href="#U"><span>U</span></a></li>
+		        <li><a href="#V"><span>V</span></a></li>
+		        <li><a href="#W"><span>W</span></a></li>
+		        <li><a href="#X"><span>X</span></a></li>
+		        <li><a href="#Y"><span>Y</span></a></li>
+		        <li><a href="#Z"><span>Z</span></a></li></ul>
+		  <!--search bar part of the nav bar-->
+        <ul class="nav navbar-nav navbar-right">
+        <li><!-- HTML for SEARCH BAR -->
+		 <span>
+		  <div id="tfheader">
+		    <form id="tfnewsearch" method="get" action="http://www.google.com">
+		            <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+		    </form>
+		  <div class="tfclear"></div>
+		  </div></span></li>
+		       
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+   
+
+
+<div id ="textBody"> 
+<br> <br>
+	<h1 id = "A">A</h1>
+		<div class="row"> <!--aurora borealis-->
+			<h3> Aurora Borealis / Aurora Australis</h3>
+			<div class="col-md-6">
+				<p id="pText"><strong>Meaning: </strong>Aurora: Goddess of the dawn -- Aurora Borealis: “dawn of the north” vs Aurora Australis: dawn of the south. Coined by Galileo Galilei, he thought that the lights were due to  sunlight reflecting from the atmosphere.</p>
+			<p id="pText"><strong>Historical Significance and Theories: </strong></p>
+				<ul id="pText">
+					<li id="textind">First known sighting in 2600 BC in China</li>
+					<li id="textind">Medieval years- lights were a sign of war or famine </li>
+					<li id="textind">Norse legends- lights were a fire bridge to the sky built by the gods</li>
+					<li id="textind">Menominee Indians of Wisconsin- the lights were an indication of manabai’wok (giants)</li>
+					<li id="textind">Inuits- lights were animal spirits that had been hunted</li>
+				</ul>
+
+				<p id="pText"><strong>What is it: </strong> Collisions of charged particles (electrons) from the sun’s solar winds with gaseous particles (i.e. oxygen and nitrogen atoms and molecules) in the earth’s atmosphere, exciting the atoms and molecules to higher energy states. When they are returned to original energy states, they release energy via light. Atmospheric currents can be 20,000,000 Amps at 50,000 Volts </p>
+			<p id="pText"><strong>Colors: </strong></p>
+				<ul id="pText">
+					<li id="textind">Yellow-green: Oxygen at <strong>50-150</strong> miles up</li>
+					<li id="textind">Red: Oxygen at <strong>150 miles and up</strong> </li>
+					<li id="textind">Blue: Nitrogen at <strong>60 miles</strong> up </li>
+					<li id="textind">Purple-red: Nitrogen at <strong>60 miles and up</strong></li>
+				</ul>
+				<p id="pText"><strong>Where can I see?: </strong>Nations bordering Arctic Ocean - Canada, Alaska, Scandinavian countries, Iceland, Greenland, North Russia and Antarctic / South Indian Ocean</p>
+				
+				<p id="pText"><strong>Learn more:</strong></p>
+				<ul>
+					<a href="https://www.nasa.gov/mission_pages/themis/auroras/aurora_history.html#.V26oW2QrIy4 " target="https://www.nasa.gov/mission_pages/themis/auroras/aurora_history.html#.V26oW2QrIy4 ">https://www.nasa.gov/mission_pages/themis/auroras/aurora_history.html#.V26oW2QrIy4  </a><br>
+					<a href="http://www.northernlightscentre.ca/northernlights.html" target="http://www.northernlightscentre.ca/northernlights.html">http://www.northernlightscentre.ca/northernlights.html</a><br>
+					<a href="http://science.howstuffworks.com/nature/climate-weather/atmospheric/question471.htm" target="http://science.howstuffworks.com/nature/climate-weather/atmospheric/question471.htm ">http://science.howstuffworks.com/nature/climate-weather/atmospheric/question471.htm </a><br>
+					<a href="http://www.swpc.noaa.gov/phenomena/aurora" target="http://www.swpc.noaa.gov/phenomena/aurora">http://www.swpc.noaa.gov/phenomena/aurora</a>
+					<a href="http://earthsky.org/earth/what-causes-the-aurora-borealis-or-northern-lights" target="http://earthsky.org/earth/what-causes-the-aurora-borealis-or-northern-lights">http://earthsky.org/earth/what-causes-the-aurora-borealis-or-northern-lights</a>
+				</ul>
+				</div>
+				<div class="col-md-6">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Aurora_borealis_(13027146284).jpg" height ="300px" width="500px">
+				</div> 
+		</div>
+
+	<h1 id = "B">B</h1>
+			<div class="row">
+				<h3>Becca</h3>
+				<div class="col-md-6">
+					<p id="pText"><strong>Who she: </strong> ;) a mystery and an avocado doctor.</p>
+					</div>
+					<div class="col-md-6">
+						
+					</div> 
+			</div>
+
+
+	<h1 id = "C">C</h1>
+	<h1 id = "D">D</h1>
+	<h1 id = "E">E</h1>
+	<h1 id = "F">F</h1>
+	<h1 id = "G">G</h1>
+	<h1 id = "H">H</h1>
+	<h1 id = "I">I</h1>
+	<div class="row">
+		<h3>Iditarod: The Last Great Race on Earth</h3>
+		<div class="col-md-6">
+			<p id="pText"><strong>What is it: </strong>Dog sled race in <strong>Alaska</strong> (from south central to Nome on western Bering Sea) over <strong>1000 miles</strong> of varied terrain (tough terrain (mountain ranges, frozen river, forest, tundra) and negative temperatures, high winds, darkness, steep climbs). Lasts <strong>3 weeks</strong> and it occurs in <strong>March</strong>. “Mushers” (person on the sleigh) spend whole year prepping and raising money. There are wheel dogs, team dogs, swing dogs, and lead dogs.</p>
+<p id="pText"><strong>Pros of the event: </strong></p>
+			<ul id="pText">
+				<li id="textind">Gets communities excited</li>
+				<li id= "textind">Economic stimulus to small Alaskan villages</li>
+			</ul>
+<p id="pText"><strong>Historical: </strong> Iditarod Trail was a mail and supply route from Seward and Knik to interior mining camps at Flat, Ophir, Ruby and Unalakleet, Elim, Golovin, White Mountain, Nome</p>
+<p id="pText"><strong>Balto: </strong></p>
+			<ul id="pText">
+				<li id="textind">1925: Balto was a Siberian Husky</li>
+				<li id="textind">All of the children in Nome got highly contagious diphtheria</li>
+				<li id="textind">Only anti-toxin at Anchorage hospital</li>
+				<li id="textind">No way to bring anti-toxin to Nome from Nenana ( after it could get there from train) except by dog sled</li>
+				<li id="textind">Balto led through -50 degrees and 50 mph winds on Iditarod trail</li>
+			<li id="textind">Saved the children! 1995 live action/animated film Balto told the story</li>
+			</ul>
+			<p id="pText"><strong>Climate change problem: </strong>2016- had issue with lack of snow: Had to ship in snow and start at a colder location (Willow, Alaska)</p>
+			<ul id="pText">
+				<li id="textind">“According to a report by the United States Environmental Protection Agency, temperatures are rising in Alaska at a rate twice as fast as the rest of the United States. In the past 60 years, average temperatures have risen by three degrees across the state, and warming in the winter has increased by six degrees. ”</li>			</ul>
+
+
+			
+			<p id="pText"><strong>Learn more:</strong></p>
+			<ul>
+				<a href="http://www.nytimes.com/2016/03/05/sports/after-warm-winter-alaska-ships-in-snow-for-start-of-iditarod-race.html" target="http://www.nytimes.com/2016/03/05/sports/after-warm-winter-alaska-ships-in-snow-for-start-of-iditarod-race.html">http://www.nytimes.com/2016/03/05/sports/after-warm-winter-alaska-ships-in-snow-for-start-of-iditarod-race.html  </a><br>
+				<a href="http://iditarod.com/about/" target="http://iditarod.com/about/ ">http://iditarod.com/about/ </a><br>
+				<a href="http://www.sibrescue.com/balto.html" target="http://www.sibrescue.com/balto.html ">http://www.sibrescue.com/balto.html </a><br> 
+				
+			</ul>
+			</div>
+			<div class="col-md-6">
+				<img src="https://c1.staticflickr.com/1/453/19315157501_e0e9b96afd_b.jpg" height ="300px" width="500px">
+			</div> 
+	</div>
+
+	<h1 id = "J">J</h1>
+	<h1 id = "K">K</h1>
+	<h1 id = "L">L</h1>
+	<h1 id = "M">M</h1>
+	<h1 id = "N">N</h1>
+	<div class="row">
+		<h3>Nuclear Submarines</h3>
+		<div class="col-md-6">
+			<p id="pText"><strong>Why: </strong>Can remain under water for several months at a time because nuclear propulsions does not need air</p>
+			<p id="pText"><strong>First proposed: </strong> 1939 in US Navy Naval Research Lab</p>
+			<p id="pText"><strong>First made: </strong> USS Nautilus in 1955, 98m (320ft) long and cost $55 million</p>
+			<p id="pText"><strong>First in combat: </strong><i>Conqueror</i> (British sub) sank <i>General Belgrano</i> (Argentine sub) during Falkland Island conflict in 1982</p>
+			<p id="pText"><strong>Largest: </strong>26,500 tonne Russian Typhoon class powered by two 190 thermal megawatt pressurized water reactors </p>
+			<p id="pText"><strong>Materials: </strong></p>
+			<ul id="pText">
+				<li id="textind">Steel is main component, then other metals</li>
+				<li id="textind">Semicondcutors like Silicon and Germanium</li>
+				<li id="textind">Nuclear reactor that usually uses Uranium</li>
+			</ul>
+			<p id="pText"><strong>Accidents: </strong></p>
+			<ul id="pText"> All early Soviet accidents-
+				<li id="textind">1961: K-19 had a cooling failure that resulted in acute radiation syndrome in 8 people</li>
+				<li id="textind">1968: K-27 had a cooling failure in a lead-bismuth cooled reactor, 9 deaths</li>
+				<li id="textind">1985: K-431 had a major steam explosion that killed 10 workers and led to high radiation exposure of about 50 extra people</li>
+			</ul>
+			<p id="pText"><strong>Fun Fact: </strong>Nuclear submarines aren't just for the military. In fact, in 1993, the US Navy let researchers used some of their nuclear powered Navy submarines to collect information on previously unreachable parts of the Arctic's ice and ocean. The program ended in '99, but was restarted in 2010 with growing concerns about global warming.</p>
+			<p id="pText"><strong>Learn more:</strong></p>
+			<ul>
+				<a href="http://www.scientificamerican.com/article/re-enlisting-submarines-t0-study-global-warming-in-the-arctic/" target="http://www.scientificamerican.com/article/re-enlisting-submarines-t0-study-global-warming-in-the-arctic/">http://www.scientificamerican.com/article/re-enlisting-submarines-t0-study-global-warming-in-the-arctic/</a><br>
+				<a href="http://www.world-nuclear.org/information-library/non-power-nuclear-applications/transport/nuclear-powered-ships.aspx" target="http://www.world-nuclear.org/information-library/non-power-nuclear-applications/transport/nuclear-powered-ships.aspx">http://www.world-nuclear.org/information-library/non-power-nuclear-applications/transport/nuclear-powered-ships.aspx</a><br>
+				<a href="http://science.howstuffworks.com/nuclear-submarine3.htm" target="http://science.howstuffworks.com/nuclear-submarine3.htm">http://science.howstuffworks.com/nuclear-submarine3.htm</a><br>
+				<a href="http://www.encyclopedia.com/topic/Nuclear_Submarine.aspx" target="http://www.encyclopedia.com/topic/Nuclear_Submarine.aspx">http://www.encyclopedia.com/topic/Nuclear_Submarine.aspx</a>
+			</ul>
+			</div>
+			<div class="col-md-6">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Typhoon3.jpg" height ="300px" width="500px">
+			</div> 
+	</div>
+	<h1 id = "O">O</h1>
+	<h1 id = "P">P</h1>
+	<h1 id = "Q">Q</h1>
+	<h1 id = "R">R</h1>
+
+			<div class="row">
+				<h3> Redbird Reef</h3>
+				<div class="col-md-6">
+					<p id="pText"><strong>The Dumping Program:</strong> 2001-2010, old subway cars were dumped off of barges off the coasts of NJ, Delaware, Maryland, and Virginia so they could continue their service by being reefs at the bottom of the Atlantic. Fish and plants could use the subway cars once windows and doors were removed. Thousands were dumped this way during these years</p>
+		<p id="pText"><strong>Why: </strong>Shore bottom in these areas is featureless so subway cars can act as artificial reefs, which can result in a “400-fold increase in the amount of plankton and small baitfish available near the reef as food for larger fish”. Also subway cars are too heavy to shift easily in storms. From an economic standpoint, the reefs also attract tourism. </p>
+				<p id="pText"><strong>Name: </strong>Named after NYC’s Redbird subway cars</p>
+					<p id="pText"><strong>Location: </strong> The Redbird Reef, specifically, is 16 miles east of Indian River inlet, off of the coast of Delaware. Delaware was the first state to get subway cars from NYC! The Reef started as 619 subway cars, but not includes decommissioned military vehicles and vessels</p>
+		<p id="pText"><strong>Problems??:  </strong>Redbird subway cars have low asbestos levels in the glue, but it is not a threat to humans unless it is airborne and it is not a risk for marine life.</ p>
+		<p id="pText"><strong>End: </strong>Ended when new subway models were built with fiberglass and plastic.</p>
+					
+					<p id="pText"><strong>Learn more:</strong></p>
+					<ul>
+						<a href="http://www.amny.com/secrets-of-new-york/secrets-of-new-york-transit-museum-s-vintage-subway-cars-1.11874293 " target="http://www.amny.com/secrets-of-new-york/secrets-of-new-york-transit-museum-s-vintage-subway-cars-1.11874293">http://www.amny.com/secrets-of-new-york/secrets-of-new-york-transit-museum-s-vintage-subway-cars-1.11874293</a><br>
+						<a href="http://www.dnrec.delaware.gov/fw/Fisheries/Pages/Red%20Bird%20Reef%20sinkings.aspx" target="http://www.dnrec.delaware.gov/fw/Fisheries/Pages/Red%20Bird%20Reef%20sinkings.aspx">http://www.dnrec.delaware.gov/fw/Fisheries/Pages/Red%20Bird%20Reef%20sinkings.aspx</a><br>
+						<a href="http://www.nytimes.com/2008/04/08/us/08reef.html?_r=0" target="http://www.nytimes.com/2008/04/08/us/08reef.html?_r=0">http://www.nytimes.com/2008/04/08/us/08reef.html?_r=0</a><br>
+						
+					</ul>
+					</div>
+					<div class="col-md-6">
+						<img src="http://assets.nydailynews.com/polopoly_fs/1.2084251.1421700776!/img/httpImage/image.jpg_gen/derivatives/gallery_1200/subway-reef.jpg" height ="300px" width="300px">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Redbird_Reef_01.JPG/250px-Redbird_Reef_01.JPG" height ="350px" width="300px">
+					</div> 
+			</div>
+
+	<h1 id = "S">S</h1>
+	<h1 id = "T">T</h1>
+	<h1 id = "U">U</h1>
+	<h1 id = "V">V</h1>
+	<h1 id = "W">W</h1>
+	<h1 id = "X">X</h1>
+	<h1 id = "Y">Y</h1>
+	<h1 id = "Z">Z</h1>
+
+</div> <!--end of text body div-->
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+<!-- Scroll Up  -->
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow79.js"></script>
+</body>
+
+
+<!--Footer -->
+<footer id="footer">
+<hr>
+  <p>About</p> 
+<p>
+For comments and questions, please email beccab437 (AT) gmail (DOT) org.</p>
+</footer>
+</div> <!--end of WHOLE SITE div!!!!!!!-->
