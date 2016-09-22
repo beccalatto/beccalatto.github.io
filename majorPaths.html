@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="http://undergrad.admissions.columbia.edu/sites/default/themes/adm/favicon.png" />
+  <title>Choosing Your Major</title>
+  <style>
+        #Site{
+          padding: 10px;
+      }
+      p{
+        font-size: 16px;
+        font-family: Arial;
+      }
+        div.page-header{
+          text-align: center;
+          font-family: Arial;
+          color: Black;
+          font-size: 55px;
+          background-color:White !important;
+        }
+        #major{
+          font-family:Garamond;
+          color:Black;
+          font-size:57px;
+        }
+         #majorButton {
+          background-color: #174785;
+          font-size: 16px;
+          font-family:Arial;
+        }
+
+        table, body, thead, tr, th, td{
+          font-family: Arial;
+          padding: 0;
+          margin: 0;
+          vertical-align: baseline;
+          -webkit-font-smoothing: antialiased;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family:Tahoma;
+        }
+       table{border-collapse: collapse; border-spacing: 0;}
+        #firstTwo{
+          padding-left: 10%;
+        }
+        #secondTwo{
+          padding-right: 10%;
+        }
+        #myTable thead{
+          background: #c4d8e2;
+        }
+        strong th{
+          font-size: 10px;
+        }
+        #myTable thead tr th{
+          font-weight: bold;
+          padding: 3px 15px;
+
+        }
+        #myTable thead tr th span{
+          padding-right: 7px;
+        }
+        #myTable tbody tr td{
+          text-align:center;
+          padding: 5px 5px;
+        }
+         .popover {
+                width: 400px !important;
+                max-width: 400px !important;
+                /*//top: 0px !important;*/
+            }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="Site" class ="container-fluid"><!-- Site container --> 
+
+
+  <div class="page-header"> <!-- Columbia page header  --> 
+        <img src="http://s8.postimg.org/5l91ja091/header.png">
+  </div> 
+
+    <div class = "row">  <!-- Major header and options --> 
+        <div class="col-sm-1"></div>
+        <div class ="col-sm-10">
+            <img id="major" src="http://s24.postimg.org/h7wlfdmud/choosingyourmajor.png"> 
+            <h3>With 16 majors to choose from and dozens of optional <a href="http://bulletin.engineering.columbia.edu/undergraduate-minors" target="http://bulletin.engineering.columbia.edu/undergraduate-minors">minors</a>, including over 20 in the liberal arts, Columbia Engineering gives students enormous choice when deciding what they would like to focus on during their four years of study. </h3>
+            <br>
+            <div id="choiceButton" class="dropdown">
+            <button id="majorButton" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">What major are you considering?
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#appliedMath">Applied Math</a></li>
+                <li><a href="#appliedPhysics">Applied Physics</a></li>
+                <li><a href="#bioMed">Biomedical Engineering</a></li>
+                <li><a href="#chemE">Chemical Engineering</a></li>
+                <li><a href="#">Civil Engineering</a></li>
+                <li><a href="#">Computer Engineering</a></li>
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Earth and Environmental Engineering</a></li>
+                <li><a href="#">Electrical Engineering</a></li>
+                <li><a href="#">Engineering Management Systems</a></li>
+                <li><a href="#">Engineering Mechanics</a></li>
+                <li><a href="#">Financial Engineering</a></li>
+                <li><a href="#">Industrial Engineering</a></li>
+                <li><a href="#">Material Science and Engineering</a></li>
+                <li><a href="#mechE">Mechanical Engineering</a></li>
+                <li><a href="#">Operations Research</a></li>
+              </ul>
+              </div>
+        </div>
+        <div class="col-sm-1"></div>
+        </div><br><br><br><br> <!-- end row Major header and options--> 
+<hr><hr>
+<br>
+    <div class = "row" id="appliedMath"> <!-- applied math info row --> 
+      <div class = "col-sm-1"></div>
+      <div class = "col-sm-10">
+        <h2>Applied Math</h2>
+        <p>Brief Overview: Applied mathematics deals with the use of mathematical concepts and techniques in various fields of science, technology, and engineering. The applied mathematician is interested in problems coming from other fields, in the formulation and solutions of these problems, and in the interpretation of the results. Their work frequently overlaps with that of other scientists and engineers.</p>
+        <p>Career paths include: Graduate and professional schools, risk management, consulting, government agencies, technical, manufacturing, and financial industries</p>
+        <a href="http://bulletin.engineering.columbia.edu/applied-physics-and-applied-mathematics" target="http://bulletin.engineering.columbia.edu/applied-physics-and-applied-mathematics" style="font-size:16px;">Department website</a> <br>
+        <a href="http://www.careereducation.columbia.edu/resources/industry/engg/appm" target="http://www.careereducation.columbia.edu/resources/industry/engg/appm" style="font-size:16px;">Applied mathematics career education overview</a> 
+        <br> <br>         
+        <div class = "col-sm-6"></div>
+        </div><!--end applied math info row --> 
+
+        <div class="row"> <!--applied math courses row --> 
+        <div class="col-sm-1"></div>
+        <div id="firstTwo"class = "col-lg-6">
+          <table id="myTable" width="100%" border = "1">
+              <thead>
+              <tr id ="tableHeadings">
+              <th>SEMESTERS</th>
+                <th><span>1</span></th>
+                <th><span>2</span></th>
+                <th><span>3</span></th>
+                <th><span>4</span></th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr id ="mathsnspecialized">
+                <td><strong>MATHEMATICS</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS I" data-trigger="focus" data-content="Prerequisites: see Courses for First-Year Students. Functions, limits, derivatives, introduction to integrals. The Help Room in 333 Milbank Hall (Barnard College) is open during the day, Monday through Friday, to students seeking individual help from the teaching assistants. (SC)">MATH V1101</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS II" data-trigger="focus" data-content="Prerequisites: MATH V1101 or the equivalent. Methods of integration, applications of the integral, Taylor's theorem, infinite series. (SC)">MATH V1102</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS III" data-trigger="focus" data-content="Prerequisites: MATH V1101 or the equivalent. Vectors in dimensions 2 and 3, complex numbers and the complex exponential function with applications to differential equations, Cramer's rule, vector-valued functions of one variable, scalar-valued functions of several variables, partial derivatives, gradients, surfaces, optimization, the method of Lagrange multipliers. (SC)">MATH V1201</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS IV" data-trigger="focus" data-content="Prerequisites: MATH V1102, V1201, or the equivalent. Multiple integrals, Taylor's formula in several variables, line and surface integrals, calculus of vector fields, Fourier series. (SC)">MATH V1202</a><br> <a href="javascript://" data-toggle="popover" title="ORDINARY DIFFERENTIAL EQUATIONS" data-trigger="focus" data-content="Prerequisites: MATH V1102-MATH V1201 or the equivalent. Special differential equations of order one. Linear differential equations with constant and variable coefficients. Systems of such equations. Transform and series solution techniques. Emphasis on applications.">ODE</a></td>
+                </tr>
+                <tr id ="phys">
+                <td><strong>PHYSICS<br>(three tracks,<br>choose one)</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO MECHANICS & THERMO" data-trigger="focus" data-content="Corequisites: MATH V1101 or the equivalent. Fundamental laws of mechanics, kinematics and dynamics, work and energy, rotational dynamics, oscillations, gravitation, fluids, temperature and heat, gas laws, the first and second laws of thermodynamics.">W1401</a>    <br> <a href="javascript://" data-toggle="popover" title="PHYSICS I:MECHANICS/RELATIVITY" data-trigger="focus" data-content="Corequisites: MATH V1102 or the equivalent. Fundamental laws of mechanics, kinematics and dynamics, work and energy, rotational dynamics, oscillations, gravitation, fluids, introduction to special relativity and relativistic kinematics. The course is preparatory for advanced work in physics and related fields.">W1601</a>    <br> <a href="javascript://" data-toggle="popover" title="ACCELERATED PHYSICS I" data-trigger="focus" data-content="Prerequisites: Advanced Placement in physics and mathematics, or the equivalent, and the instructor's permission. (A special placement meeting is held during Orientation.) This accelerated two-semester sequence covers the subject matter of PHYS W1601, W1602 and W2601, and is intended for those students who have an exceptionally strong background in both physics and mathematics. The course is preparatory for advanced work in physics and related fields. There is no accompanying laboratory; however, students are encouraged to take the intermediate laboratory, PHYS W3081, in the following year.">W2801</a>  </td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO ELEC/MAGNETSM AND OPTCS" data-trigger="focus" data-content="Prerequisites: PHYS W1401. Corequisites: MATH V1102 or the equivalent. Electric fields, direct currents, magnetic fields, alternating currents, electromagnetic waves, polarization, geometrical optics, interference, and diffraction.">W1402</a>    <br><a href="javascript://" data-toggle="popover" title="PHYSICS II:THERMO,ELEC/MAG-REC" data-trigger="focus" data-content="Prerequisites: PHYS W1601. Corequisites: MATH V1201 or the equivalent. Temperature and heat, gas laws, the first and second laws of thermodynamics, kinetic theory of gases, electric fields, direct currents, magnetic fields, alternating currents, electromagnetic waves. The course is preparatory for advanced work in physics and related fields.">W1602</a>   <br><a href="javascript://" data-toggle="popover" title="ACCELERATED PHYSICS II" data-trigger="focus" data-content="Prerequisites: Advanced Placement in physics and mathematics, or the equivalent, and the instructor's permission. (A special placement meeting is held during Orientation.) This accelerated two-semester sequence covers the subject matter of PHYS W1601, W1602 and W2601, and is intended for those students who have an exceptionally strong background in both physics and mathematics. The course is preparatory for advanced work in physics and related fields. There is no accompanying laboratory; however, students are encouraged to take the intermediate laboratory, PHYS W3081, in the following year.">W2802</a>  </td>
+                  <td><a href="javascript://" data-toggle="popover" title="GENERAL PHYSICS-LECTURES" data-trigger="focus" data-content="Prerequisites: PHYS W1402. Corequisites: MATH V1201 or the equivalent. Classical waves and the wave equation, Fourier series and integrals, normal modes, wave-particle duality, the uncertainty principle, basic principles of quantum mechanics, energy levels, reflection and transmission coefficients, applications to atomic physics.">W1403</a>
+                    <br><a href="javascript://" data-toggle="popover" title="PHYSICS III:CLASS/QUANTUM WAVE" data-trigger="focus" data-content="Prerequisites: PHYS W1402 or W1602. Corequisites: MATH V1202 or the equivalent. Classical waves and the wave equation, geometrical optics, interference and diffraction, Fourier series and integrals, normal modes, wave-particle duality, the uncertainty principle, basic principles of quantum mechanics, energy levels, reflection and transmission coefficients, the harmonic oscillator. The course is preparatory for advanced work in physics and related fields.">W2601</a>  <br><a href="javascript://" data-toggle="popover" title="INTERMEDIATE LABORATORY WORK" data-trigger="focus" data-content="Prerequisites: PHYS W2601 or PHYS W2802. Primarily for junior and senior physics majors; other majors must obtain the instructor's permission. Each experiment is chosen by the student in consultation with the instructor. Each section meets one afternoon per week, with registration in each section limited by the laboratory capacity. Experiments (classical and modern) cover topics in electricity, magnetism, optics, atomic physics, and nuclear physics.">Lab W3081</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO EXPERIMENTAL PHYS-LAB" data-trigger="focus" data-content="Prerequisites: PHYS W1401 and W1402. Laboratory work associated with the two prerequisite lecture courses. Experiments in mechanics, thermodynamics, electricity, magnetism, optics, wave motion, atomic physics, and nuclear physics. Note: Students cannot receive credit for both PHYS W1493 and W1494.">W1494</a> <br><a href="javascript://" data-toggle="popover" title="EXP'TS IN CLASSICL/MOD PHYSICS" data-trigger="focus" data-content="Prerequisites: PHYS W1601 (or W1401), W1602 (or W1402), and W2601. Laboratory work associated with the three prerequisite lecture courses. Experiments in mechanics, thermodynamics, electricity, magnetism, optics, wave motion, atomic physics, and nuclear physics.">Lab W2699</a></td>
+                </tr>
+                <tr id ="chembio">
+                <td><strong>CHEMISTRY/<br>BIOLOGY<br>(choose one course)</strong></td>
+                  <td colspan=2><a href="javascript://" data-toggle="popover" title="GENERAL CHEMISTRY I-LECTURES" data-trigger="focus" data-content="Corequisites: MATH V1101, unless students have taken AP Calculus. Preparation equivalent to one year of high school chemistry is assumed. Students lacking such preparation should plan independent study of chemistry over the summer or take CHEM W0001 before taking CHEM W1403. Topics include stoichiometry, states of matter, nuclear properties, electronic structures of atoms, periodic properties, chemical bonding, molecular geometry, introduction to quantum mechanics and atomic theory, introduction to organic and biological chemistry, solid state and materials science, polymer science and macromolecular structures and coordination chemistry. Although CHEM W1403 and CHEM W1404 are separate courses, students are expected to take both terms sequentially. The order of presentation of topics may differ from the order presented here, and from year to year. Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">CHEM C1403</a> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="2ND TERM GEN CHEM (INTENSIVE)" data-trigger="focus" data-content="Prerequisites: a grade of "B" or better in CHEM W1403 OR acceptable performance on the Department placement exam. Corequisites: MATH V1102 Topics include: gases (kinetic theory of gases); binary collision model for chemical reactions; chemical kinetics; acid-base equilibria; thermochemistry (thermodynamics I); spontaneous processes (thermodymanics II); chemical bonding in polyatomic molecules.  Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">W1604</a> <strong>or</strong> <br> <a href="javascript://" data-toggle="popover" title="INTRO BIO I: BIOCHEM,GEN,MOLEC" data-trigger="focus" data-content="Prerequisites: one year of college chemistry, or a strong high school chemistry background. Lecture and recitation. Recommended as the introductory biology course for biology and related majors, and for premedical students. Fundamental principles of biochemistry, molecular biology, and genetics.">BIOL C2005</a> <strong>or</strong> higher</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr id="english">
+                <td><strong>ENGLISH<br>COMPOSITION<br></strong></td>
+                  <td colspan = "2" ><a href="javascript://" data-toggle="popover" title="UNIVERSITY WRITING" data-trigger="focus" data-content="Theme options at Columbia Core website">C1010</a> <br> either semester </td>
+                  <td></td> <td></td>
+                </tr>
+                <tr id="nonRequiredTech">
+                <td><strong>REQUIRED <br> NONTECHNICAL <br> ELECTIVES</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript://" data-toggle="popover" title="EURPN LIT-PHILOS MASTERPIECS I" data-trigger="focus" data-content="Taught by members of the Departments of Classics; English and Comparative Literature; French; German; Italian; Middle Eastern, South Asian, and African Studies; Philosophy; Religion; Slavic Languages; and Spanish; as well as members of the Society of Fellows. Major works by over twenty authors, ranging in time, theme, and genre, from Homer to Virginia Woolf. Students are expected to write at least two papers, to complete two examinations each semester, and to participate actively in class discussions.">HUMA C1001</a> <br> <a href="javascript://" data-toggle="popover" title="CONTEMP WESTERN CIVILIZATION I" data-trigger="focus" data-content="Taught by members of the Departments of Anthropology, Classics, English and Comparative Literature, French, German, History, Middle East and Asian Languages and Cultures, Philosophy, Political Science, Religion, Slavic Languages, and Sociology; and members of the Society of Fellows. A study in their historical context of major contributions to the intellectual traditions that underpin contemporary civilization. Emphasis is on the history of political, social, and philosophical thought. Students are expected to write at least three papers to complete two examinations, and to participate actively in class discussions.">COCI C1101</a> <br> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Options for global core at http://bulletin.columbia.edu/columbia-college/core-curriculum/global-core-requirement/">Global Core</a> <br> <br> <a href="javascript://" data-toggle="popover" title="MASTERPIECES OF WESTERN ART" data-trigger="focus" data-content="Discussion and analysis of the artistic qualities and significance of selected works of painting, sculpture, and architecture from the Parthenon in Athens to works of the 20th century.">HUMA W1121</a> <br><strong>or</strong> <a href="javascript://" data-toggle="popover" title="MASTERPIECES OF WESTERN MUSIC" data-trigger="focus" data-content="Analysis and discussion of representative works from the Middle Ages to the present.">W1123</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="EURPN LIT-PHILOS MASTRPIECS II" data-trigger="focus" data-content="Taught by members of the Departments of Classics; English and Comparative Literature; French; German; Italian; Middle Eastern, South Asian, and African Studies; Philosophy; Religion; Slavic Languages; and Spanish; as well as members of the Society of Fellows. Major works by over twenty authors, ranging in time, theme, and genre, from Homer to Virginia Woolf. Students are expected to write at least two papers, to complete two examinations each semester, and to participate actively in class discussions.">HUMA C1002</a> <br> <a href="javascript://" data-toggle="popover" title="CONTEMP WESTRN CIVILIZATION II" data-trigger="focus" data-content="Taught by members of the Departments of Anthropology, Classics, English and Comparative Literature, French, German, History, Middle East and Asian Languages and Cultures, Philosophy, Political Science, Religion, Slavic Languages, and Sociology; and members of the Society of Fellows. A study in their historical context of major contributions to the intellectual traditions that underpin contemporary civilization. Emphasis is on the history of political, social, and philosophical thought. Students are expected to write at least three papers to complete two examinations, and to participate actively in class discussions.">COCI C1102</a> <br> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Options for global core at http://bulletin.columbia.edu/columbia-college/core-curriculum/global-core-requirement/">Global Core</a> <br> <br> <a href="javascript://" data-toggle="popover" title="PRINCIPLES OF ECONOMICS" data-trigger="focus" data-content="Corequisites: ECON W1155 recitation section with the same instructor. How a market economy determines the relative prices of goods, factors of production, and the allocation of resources and the circumstances under which it does it efficiently. Why such an economy has fluctuations and how they may becontrolled.">ECON W1105</a> <br><strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="PRINCIPLES OF ECONOMICS-DISC">W1155 recitation</a></td> 
+                </tr>
+                <tr>
+                  <td><strong>REQUIRED <br> TECH <br> ELECTIVES</strong></td>
+                  <td colspan=4><a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Can be found at http://bulletin.engineering.columbia.edu/specialty-areas-apam">Required Tech Electives</a></td>
+                </tr>
+                <tr>
+                <td><strong>COMPUTER <br> SCIENCE</strong></td>
+                  <td colspan=4><a href="javascript://" data-toggle="popover" title="INTRO TO COMP FOR ENG/APP SCI" data-trigger="focus" data-content="An interdisciplinary course in computing intended for first year SEAS students. Introduces computational thinking, algorithmic problem solving and Python programming with applications in science and engineering. Assumes no prior programming background.">ENGI E1006</a><br> any semester</td>
+                </tr>
+                <tr>
+                <td><strong>PHYSICAL <br> EDUCATION</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="PHYSICAL ED" data-trigger="focus" data-content="The times listed in the on-line Directory of Classes are the actual class times for each time preference. Students should allow additional time for showering, dressing, equipment exchange, and travel to next class. A description of the scheduled activities for each time preference is posted on the department Web site, http://www.dodgefitnesscenter.com.">C1001</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="PHYSICAL ED" data-trigger="focus" data-content="The times listed in the on-line Directory of Classes are the actual class times for each time preference. Students should allow additional time for showering, dressing, equipment exchange, and travel to next class. A description of the scheduled activities for each time preference is posted on the department Web site, http://www.dodgefitnesscenter.com.">C1002</a></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                <td><strong>THE ART <br> OF <br> ENGINEERING</strong></td>
+                  <td colspan=2><a href="javascript://" data-toggle="popover" title="THE ART OF ENGINEERING" data-trigger="focus" data-content="Core requirement for all entering SEAS students. This course is a bridge between the science-oriented, high school way of thinking and the engineering point of view. Fundamental concepts of math and science are reviewed and re-framed in an engineering context, with numerous examples of each concept drawn from all disciplines of engineering represented at Columbia. Non-technical issues of importance in professional engineering practice such as ethics, engineering project management, and societal impact are addressed. Lab fee: $350.">E1102</a> <br> either semester</td>
+                  <td></td>
+                  <td></td>                
+                </tr>
+            </tbody>
+          </table>
+          </div>
+          
+          <div id="secondTwo" class = "col-lg-6">
+          <table id="myTable" width="100%" border = "1">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+
+            <thead>
+              <tr>
+              <th></th>
+                <th><span>5</span></th>
+                <th><span>6</span></th>
+                <th><span>7</span></th>
+                <th><span>8</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td><strong>REQUIRED <br> COURSES</strong></td>
+                <td><a href="javascript://" data-toggle="popover" title="APPLIED MATH I: LINEAR ALGEBRA" data-trigger="focus" data-content="
+                Matrix algebra, elementary matrices, inverses, rank, determinants. Computational aspects of solving systems of linear equations: existence-uniqueness of solutions, Gaussian elimination, scaling, ill-conditioned systems, iterative techniques. Vector spaces, bases, dimension. Eigenvalue problems, diagonalization, inner products, unitary matrices.">APMA E3101</a> <hr> <a href="javascript://" data-toggle="popover" title="SEM-PROBLEMS IN APPLIED MATH" data-trigger="focus" data-content="Prerequisites: MATH V3027, V3028, and V2010, or their equivalents. May be taken before or concurrently with this course. Required for all applied mathematics major in the junior year. Introductory seminars on problems and techniques in applied mathematics. Typical topics are nonlinear dynamics, scientific computation, economics, operation research, etc.">APMA E4901</a> <hr> Course from Group A <br> or Group B <br> listed below<hr> <a href="javascript://" data-toggle="popover" title="FUNCTNS OF A COMPLEX VARIABLE" data-trigger="focus" data-content="Prerequisites: MATH V1202 or the equivalent. Complex numbers, functions of a complex variable, differentiation and integration in the complex plane. Analytic functions, Cauchy integral theorem and formula, Taylor and Laurent series, poles and residues, branch points, evaluation of contour integrals. Conformal mapping, Schwarz-Christoffel transformation.  Applications to physical problems.">APMA E4204</a> </td>
+                <td><a href="javascript://" data-toggle="popover" title="APPLIED MATHEMATICS II" data-trigger="focus" data-content="Prerequisites: MATH V2030 or the equivalent Introduction to partial differential equations; integral theorems of vector calculus. Partial differential equations of engineering in rectangular, cylindrical, and spherical coordinates. Separation of the variables. Characteristic-value problems. Bessel functions, Legendre polynomials, other orthogonal functions; their use in boundary value problems. Illustrative examples from the fields of electromagnetic theory, vibrations, heat flow, and fluid mechanics.">APMA E3102</a> <hr> Course from Group A <br> or Group B <hr> <a href="javascript://" data-toggle="popover" title="COMPUT MATH:INTRO-NUMERCL METH" data-trigger="focus" data-content="Prerequisites: MATH V1201, V2030, and APMA E3101 and ENGI E1006 or their equivalents. Programming experience in Python extremely useful. Introduction to fundamental algorithms and analysis of numerical methods commonly used by scientists, mathematicians and engineers.Designed to give a fundamental understanding of the building blocks of scientific computing that will be used in more advanced courses in scientific computing and numerical methods for PDEs (e.g. APMA E4301, E4302). Topics include numerical solutions of algebraic systems, linear least-squares, eigenvalue problems, solution of non-linear systems, optimization, interpolation, numerical integration and differentiation, initial value problems and boundary value problems for systems of ODEs. All programming exercises will be in Python.">APMA E4300</a> </td>
+                <td><a href="javascript://" data-toggle="popover" title="INTRO-MODERN ANALYSIS I" data-trigger="focus" data-content="Prerequisites: MATH V1202 or the equivalent, and V2010. The second term of this course may not be taken without the first. Real numbers, metric spaces, elements of general topology. Continuous and differential functions. Implicit functions. Integration; change of variables. Function spaces.">MATH W4061</a> <hr> <a href="javascript://" data-toggle="popover" title="APPL MATH III:DYNAMICAL SYSTMS" data-trigger="focus" data-content="Prerequisites: APMA E2101 (or MATH E1210) and APMA E3101. An introduction to the analytic and geometric theory of dynamical systems; basic existence, uniqueness and parameter dependence of solutions to ordinary differential equations; constant coefficient and parametrically forced systems; Fundamental solutions; resonance; limit points, limit cycles and clasificiation of flows in the plane (poincare-Bendixson Therem); conservative and dissipative systems; linear and nonlinear stability analysis of equilibria and periodic solutions; stble and unstable manifoleds; bifurcations, e.g. Andronov-Hopf; sensitive depeneence and chaotic dynamics; slected applications.">APMA E4101</a> <hr> <a href="javascript://" data-toggle="popover" title="SEM-PROBLEMS IN APPLIED MATH" data-trigger="focus" data-content="Prerequisites: MATH V3007, V3028, and V2010, or their equivalents. May be taken before or concurrently with this course. Required for all applied mathematics majors in the senior year. It consists of the same weekly lecture as APMA E4901 plus two hours of tutorials per week. Examples of problem areas are nonlinear dynamics, asymptotics, approximation theory, numerical methods, etc.">APMA E4903</a></td>
+                <td><a href="javascript://" data-toggle="popover" title="UNDERGRAD RES IN APPLIED MATH" data-trigger="focus" data-content="Prerequisites: Written permission from instructor and approval from adviser. This course may be repeated for credit, but no more than 6 points of this course may be counted toward the satisfaction of the B.S. degree requirements. Candidates for the B.S. degree may conduct an investigation in applied mathematics or carry out a special project under the supervision of the staff. Credit for the course is contingent upon the submission of an acceptable thesis or final report.">APMA E3900</a><hr> Courses designated <br> MATH, APMA, or STAT</td>
+              </tr>
+              <tr>
+                <td><strong>TECH ELECTIVES</strong></td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>6 points</td>
+              </tr>
+              <tr>
+                <td><strong>NONTECH ELECTIVES</strong></td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+              </tr>
+              <tr>
+                <td><strong>TOTAL POINTS</strong></td>
+                <td>15</td>
+                <td>15</td>
+                <td>16</td>
+                <td>15</td>
+              </tr>
+
+            </tbody>
+          </table> 
+          <br>
+          <p>Important Notes:</p>
+          <ul>
+          <li>With the permission of the faculty adviser, students with advanced standing may start the calculus sequence at a higher level</li>
+          <li>Applied mathematics majors should satisfy their ODE requirement with the Mathematics Department (ordinarily MATH V2030). Students who take APMA E2101 prior to declaring their major in applied mathematics may use this course to satisfy their ODE requirement with the permission of the faculty advisor</li>
+          <li>MATH V2010 may be substitued for APMA E3101; MATH V3028 may be substituted for APMA E3102; MATH V3007 may be substituted for APMA E4204</li>
+          <li>Group A: IEOR E3658 (Probability); STAT W4105 (Probability); SIEO W3600 (Introduction to probability and statistics); SIEO W4150 (Introduction to probability and statistics); STAT W3105 (Introduction to probability); MATH W4155 (Probability theory)</li><li> Group B: STAT W3107 (Statistical inference); STAT W4107 (Statistical inference); STAT W4109 (Probability and statistical inference); SIEO W4606 (Elementary stochastic processes); IEOR E3106 (Introduction to stochastic models); IEOR E4106 (Introduction to operations research: stochastic models); IEOR E4703 (Monte Carlo simulation); COMS W4771 (Machine learning)</li>
+          <li>With an adviser's permission, an approved technical elective may be substituted</li>
+          <li>Any course in science or engineering at the 3000 level or above qualifies as a technical elective</li> </ul>
+          </div><!-- end of applied math courses column 2 --> 
+          
+        </div> <!-- end of applied math courses row  --> 
+
+<br> <hr> <br>
+    <div class = "row" id="appliedPhysics"> <!-- applied physics info row --> 
+      <div class = "col-sm-1"></div>
+      <div class = "col-sm-10">
+        <h2>Applied Physics</h2>
+        <p>Brief Description: The applied physics program stresses the basic physics that underlies most
+        developments in technology and engineering and the mathematical tools that are important to both physicists and engineers. Since the advances in most branches of technology lead to rapid changes in state-of-the-art techniques, the applied
+        physics program provides the student with a broad base of fundamental science and mathematics while retaining the opportunity for specialization through
+        technical electives. Research areas include fusion and space plasma physics, optical and laser physics,
+        condensed matter physics, and nanophysics.</p><p>Career paths include: Graduate and professional schools, risk management, consulting, government agencies, technical, manufacturing, and financial industries</p>
+        <a href="http://bulletin.engineering.columbia.edu/applied-physics-and-applied-mathematics" target="http://bulletin.engineering.columbia.edu/applied-physics-and-applied-mathematics" style="font-size:16px;">Department website</a> <br>
+        <a href="http://www.careereducation.columbia.edu/resources/industry/engg/appp" target="http://www.careereducation.columbia.edu/resources/industry/engg/appp" style="font-size:16px;">Applied physics career education overview</a> 
+         <br> <br>         
+        <div class = "col-sm-6"></div>
+        </div><!--end applied physics info row --> 
+
+        <div class="row"> <!--applied physics courses row --> 
+        <div class="col-sm-1"></div>
+        <div id="firstTwo"class = "col-lg-6">
+          <table id="myTable" width="100%" border = "1">
+              <thead>
+              <tr id ="tableHeadings">
+              <th>SEMESTERS</th>
+                <th><span>1</span></th>
+                <th><span>2</span></th>
+                <th><span>3</span></th>
+                <th><span>4</span></th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr id ="mathsnspecialized">
+                <td><strong>MATHEMATICS</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS I" data-trigger="focus" data-content="Prerequisites: see Courses for First-Year Students. Functions, limits, derivatives, introduction to integrals. The Help Room in 333 Milbank Hall (Barnard College) is open during the day, Monday through Friday, to students seeking individual help from the teaching assistants. (SC)">MATH V1101</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS II" data-trigger="focus" data-content="Prerequisites: MATH V1101 or the equivalent. Methods of integration, applications of the integral, Taylor's theorem, infinite series. (SC)">MATH V1102</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS III" data-trigger="focus" data-content="Prerequisites: MATH V1101 or the equivalent. Vectors in dimensions 2 and 3, complex numbers and the complex exponential function with applications to differential equations, Cramer's rule, vector-valued functions of one variable, scalar-valued functions of several variables, partial derivatives, gradients, surfaces, optimization, the method of Lagrange multipliers. (SC)">MATH V1201</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS IV" data-trigger="focus" data-content="Prerequisites: MATH V1102, V1201, or the equivalent. Multiple integrals, Taylor's formula in several variables, line and surface integrals, calculus of vector fields, Fourier series. (SC)">MATH V1202</a><br> <a href="javascript://" data-toggle="popover" title="ORDINARY DIFFERENTIAL EQUATIONS" data-trigger="focus" data-content="Prerequisites: MATH V1102-MATH V1201 or the equivalent. Special differential equations of order one. Linear differential equations with constant and variable coefficients. Systems of such equations. Transform and series solution techniques. Emphasis on applications.">ODE</a></td>
+                </tr>
+                <tr id ="phys">
+                <td><strong>PHYSICS<br>(three tracks,<br>choose one)</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO MECHANICS & THERMO" data-trigger="focus" data-content="Corequisites: MATH V1101 or the equivalent. Fundamental laws of mechanics, kinematics and dynamics, work and energy, rotational dynamics, oscillations, gravitation, fluids, temperature and heat, gas laws, the first and second laws of thermodynamics.">W1401</a>    <br> <a href="javascript://" data-toggle="popover" title="PHYSICS I:MECHANICS/RELATIVITY" data-trigger="focus" data-content="Corequisites: MATH V1102 or the equivalent. Fundamental laws of mechanics, kinematics and dynamics, work and energy, rotational dynamics, oscillations, gravitation, fluids, introduction to special relativity and relativistic kinematics. The course is preparatory for advanced work in physics and related fields.">W1601</a>    <br> <a href="javascript://" data-toggle="popover" title="ACCELERATED PHYSICS I" data-trigger="focus" data-content="Prerequisites: Advanced Placement in physics and mathematics, or the equivalent, and the instructor's permission. (A special placement meeting is held during Orientation.) This accelerated two-semester sequence covers the subject matter of PHYS W1601, W1602 and W2601, and is intended for those students who have an exceptionally strong background in both physics and mathematics. The course is preparatory for advanced work in physics and related fields. There is no accompanying laboratory; however, students are encouraged to take the intermediate laboratory, PHYS W3081, in the following year.">W2801</a>  </td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO ELEC/MAGNETSM AND OPTCS" data-trigger="focus" data-content="Prerequisites: PHYS W1401. Corequisites: MATH V1102 or the equivalent. Electric fields, direct currents, magnetic fields, alternating currents, electromagnetic waves, polarization, geometrical optics, interference, and diffraction.">W1402</a>    <br><a href="javascript://" data-toggle="popover" title="PHYSICS II:THERMO,ELEC/MAG-REC" data-trigger="focus" data-content="Prerequisites: PHYS W1601. Corequisites: MATH V1201 or the equivalent. Temperature and heat, gas laws, the first and second laws of thermodynamics, kinetic theory of gases, electric fields, direct currents, magnetic fields, alternating currents, electromagnetic waves. The course is preparatory for advanced work in physics and related fields.">W1602</a>   <br><a href="javascript://" data-toggle="popover" title="ACCELERATED PHYSICS II" data-trigger="focus" data-content="Prerequisites: Advanced Placement in physics and mathematics, or the equivalent, and the instructor's permission. (A special placement meeting is held during Orientation.) This accelerated two-semester sequence covers the subject matter of PHYS W1601, W1602 and W2601, and is intended for those students who have an exceptionally strong background in both physics and mathematics. The course is preparatory for advanced work in physics and related fields. There is no accompanying laboratory; however, students are encouraged to take the intermediate laboratory, PHYS W3081, in the following year.">W2802</a>  </td>
+                  <td><a href="javascript://" data-toggle="popover" title="GENERAL PHYSICS-LECTURES" data-trigger="focus" data-content="Prerequisites: PHYS W1402. Corequisites: MATH V1201 or the equivalent. Classical waves and the wave equation, Fourier series and integrals, normal modes, wave-particle duality, the uncertainty principle, basic principles of quantum mechanics, energy levels, reflection and transmission coefficients, applications to atomic physics.">W1403</a>
+                    <br><a href="javascript://" data-toggle="popover" title="PHYSICS III:CLASS/QUANTUM WAVE" data-trigger="focus" data-content="Prerequisites: PHYS W1402 or W1602. Corequisites: MATH V1202 or the equivalent. Classical waves and the wave equation, geometrical optics, interference and diffraction, Fourier series and integrals, normal modes, wave-particle duality, the uncertainty principle, basic principles of quantum mechanics, energy levels, reflection and transmission coefficients, the harmonic oscillator. The course is preparatory for advanced work in physics and related fields.">W2601</a>  <br><a href="javascript://" data-toggle="popover" title="INTERMEDIATE LABORATORY WORK" data-trigger="focus" data-content="Prerequisites: PHYS W2601 or PHYS W2802. Primarily for junior and senior physics majors; other majors must obtain the instructor's permission. Each experiment is chosen by the student in consultation with the instructor. Each section meets one afternoon per week, with registration in each section limited by the laboratory capacity. Experiments (classical and modern) cover topics in electricity, magnetism, optics, atomic physics, and nuclear physics.">Lab W3081</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO EXPERIMENTAL PHYS-LAB" data-trigger="focus" data-content="Prerequisites: PHYS W1401 and W1402. Laboratory work associated with the two prerequisite lecture courses. Experiments in mechanics, thermodynamics, electricity, magnetism, optics, wave motion, atomic physics, and nuclear physics. Note: Students cannot receive credit for both PHYS W1493 and W1494.">W1494</a> <br><a href="javascript://" data-toggle="popover" title="EXP'TS IN CLASSICL/MOD PHYSICS" data-trigger="focus" data-content="Prerequisites: PHYS W1601 (or W1401), W1602 (or W1402), and W2601. Laboratory work associated with the three prerequisite lecture courses. Experiments in mechanics, thermodynamics, electricity, magnetism, optics, wave motion, atomic physics, and nuclear physics.">Lab W2699</a></td>
+                </tr>
+                <tr id ="chembio">
+                <td><strong>CHEMISTRY/<br>BIOLOGY<br>(choose one course)</strong></td>
+                  <td colspan=2><a href="javascript://" data-toggle="popover" title="GENERAL CHEMISTRY I-LECTURES" data-trigger="focus" data-content="Corequisites: MATH V1101, unless students have taken AP Calculus. Preparation equivalent to one year of high school chemistry is assumed. Students lacking such preparation should plan independent study of chemistry over the summer or take CHEM W0001 before taking CHEM W1403. Topics include stoichiometry, states of matter, nuclear properties, electronic structures of atoms, periodic properties, chemical bonding, molecular geometry, introduction to quantum mechanics and atomic theory, introduction to organic and biological chemistry, solid state and materials science, polymer science and macromolecular structures and coordination chemistry. Although CHEM W1403 and CHEM W1404 are separate courses, students are expected to take both terms sequentially. The order of presentation of topics may differ from the order presented here, and from year to year. Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">CHEM C1403</a> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="2ND TERM GEN CHEM (INTENSIVE)" data-trigger="focus" data-content="Prerequisites: a grade of "B" or better in CHEM W1403 OR acceptable performance on the Department placement exam. Corequisites: MATH V1102 Topics include: gases (kinetic theory of gases); binary collision model for chemical reactions; chemical kinetics; acid-base equilibria; thermochemistry (thermodynamics I); spontaneous processes (thermodymanics II); chemical bonding in polyatomic molecules.  Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">W1604</a> <strong>or</strong> <br> <a href="javascript://" data-toggle="popover" title="INTRO BIO I: BIOCHEM,GEN,MOLEC" data-trigger="focus" data-content="Prerequisites: one year of college chemistry, or a strong high school chemistry background. Lecture and recitation. Recommended as the introductory biology course for biology and related majors, and for premedical students. Fundamental principles of biochemistry, molecular biology, and genetics.">BIOL C2005</a> <strong>or</strong> higher</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr id="english">
+                <td><strong>ENGLISH<br>COMPOSITION<br></strong></td>
+                  <td colspan = "2" ><a href="javascript://" data-toggle="popover" title="UNIVERSITY WRITING" data-trigger="focus" data-content="Theme options at Columbia Core website">C1010</a> <br> either semester </td>
+                  <td></td> <td></td>
+                </tr>
+                <tr id="nonRequiredTech">
+                <td><strong>REQUIRED <br> NONTECHNICAL <br> ELECTIVES</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript://" data-toggle="popover" title="EURPN LIT-PHILOS MASTERPIECS I" data-trigger="focus" data-content="Taught by members of the Departments of Classics; English and Comparative Literature; French; German; Italian; Middle Eastern, South Asian, and African Studies; Philosophy; Religion; Slavic Languages; and Spanish; as well as members of the Society of Fellows. Major works by over twenty authors, ranging in time, theme, and genre, from Homer to Virginia Woolf. Students are expected to write at least two papers, to complete two examinations each semester, and to participate actively in class discussions.">HUMA C1001</a> <br> <a href="javascript://" data-toggle="popover" title="CONTEMP WESTERN CIVILIZATION I" data-trigger="focus" data-content="Taught by members of the Departments of Anthropology, Classics, English and Comparative Literature, French, German, History, Middle East and Asian Languages and Cultures, Philosophy, Political Science, Religion, Slavic Languages, and Sociology; and members of the Society of Fellows. A study in their historical context of major contributions to the intellectual traditions that underpin contemporary civilization. Emphasis is on the history of political, social, and philosophical thought. Students are expected to write at least three papers to complete two examinations, and to participate actively in class discussions.">COCI C1101</a> <br> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Options for global core at http://bulletin.columbia.edu/columbia-college/core-curriculum/global-core-requirement/">Global Core</a> <br> <br> <a href="javascript://" data-toggle="popover" title="MASTERPIECES OF WESTERN ART" data-trigger="focus" data-content="Discussion and analysis of the artistic qualities and significance of selected works of painting, sculpture, and architecture from the Parthenon in Athens to works of the 20th century.">HUMA W1121</a> <br><strong>or</strong> <a href="javascript://" data-toggle="popover" title="MASTERPIECES OF WESTERN MUSIC" data-trigger="focus" data-content="Analysis and discussion of representative works from the Middle Ages to the present.">W1123</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="EURPN LIT-PHILOS MASTRPIECS II" data-trigger="focus" data-content="Taught by members of the Departments of Classics; English and Comparative Literature; French; German; Italian; Middle Eastern, South Asian, and African Studies; Philosophy; Religion; Slavic Languages; and Spanish; as well as members of the Society of Fellows. Major works by over twenty authors, ranging in time, theme, and genre, from Homer to Virginia Woolf. Students are expected to write at least two papers, to complete two examinations each semester, and to participate actively in class discussions.">HUMA C1002</a> <br> <a href="javascript://" data-toggle="popover" title="CONTEMP WESTRN CIVILIZATION II" data-trigger="focus" data-content="Taught by members of the Departments of Anthropology, Classics, English and Comparative Literature, French, German, History, Middle East and Asian Languages and Cultures, Philosophy, Political Science, Religion, Slavic Languages, and Sociology; and members of the Society of Fellows. A study in their historical context of major contributions to the intellectual traditions that underpin contemporary civilization. Emphasis is on the history of political, social, and philosophical thought. Students are expected to write at least three papers to complete two examinations, and to participate actively in class discussions.">COCI C1102</a> <br> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Options for global core at http://bulletin.columbia.edu/columbia-college/core-curriculum/global-core-requirement/">Global Core</a> <br> <br> <a href="javascript://" data-toggle="popover" title="PRINCIPLES OF ECONOMICS" data-trigger="focus" data-content="Corequisites: ECON W1155 recitation section with the same instructor. How a market economy determines the relative prices of goods, factors of production, and the allocation of resources and the circumstances under which it does it efficiently. Why such an economy has fluctuations and how they may becontrolled.">ECON W1105</a> <br><strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="PRINCIPLES OF ECONOMICS-DISC">W1155 recitation</a></td> 
+                </tr>
+                <tr>
+                  <td><strong>REQUIRED <br> TECH <br> ELECTIVES</strong></td>
+                  <td colspan=4><a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Can be found at http://bulletin.engineering.columbia.edu/specialty-areas-apam">Required Tech Electives</a></td>
+                </tr>
+                <tr>
+                <td><strong>COMPUTER <br> SCIENCE</strong></td>
+                  <td colspan=4><a href="javascript://" data-toggle="popover" title="INTRO TO COMP FOR ENG/APP SCI" data-trigger="focus" data-content="An interdisciplinary course in computing intended for first year SEAS students. Introduces computational thinking, algorithmic problem solving and Python programming with applications in science and engineering. Assumes no prior programming background.">ENGI E1006</a><br> any semester</td>
+                </tr>
+                <tr>
+                <td><strong>PHYSICAL <br> EDUCATION</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="PHYSICAL ED" data-trigger="focus" data-content="The times listed in the on-line Directory of Classes are the actual class times for each time preference. Students should allow additional time for showering, dressing, equipment exchange, and travel to next class. A description of the scheduled activities for each time preference is posted on the department Web site, http://www.dodgefitnesscenter.com.">C1001</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="PHYSICAL ED" data-trigger="focus" data-content="The times listed in the on-line Directory of Classes are the actual class times for each time preference. Students should allow additional time for showering, dressing, equipment exchange, and travel to next class. A description of the scheduled activities for each time preference is posted on the department Web site, http://www.dodgefitnesscenter.com.">C1002</a></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                <td><strong>THE ART <br> OF <br> ENGINEERING</strong></td>
+                  <td colspan=2><a href="javascript://" data-toggle="popover" title="THE ART OF ENGINEERING" data-trigger="focus" data-content="Core requirement for all entering SEAS students. This course is a bridge between the science-oriented, high school way of thinking and the engineering point of view. Fundamental concepts of math and science are reviewed and re-framed in an engineering context, with numerous examples of each concept drawn from all disciplines of engineering represented at Columbia. Non-technical issues of importance in professional engineering practice such as ethics, engineering project management, and societal impact are addressed. Lab fee: $350.">E1102</a> <br> either semester</td>
+                  <td></td>
+                  <td></td>                
+                </tr>
+            </tbody>
+          </table>
+          </div>
+          
+          <div id="secondTwo" class = "col-lg-6">
+          <table id="myTable" width="100%" border = "1">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+
+            <thead>
+              <tr>
+              <th></th>
+                <th><span>5</span></th>
+                <th><span>6</span></th>
+                <th><span>7</span></th>
+                <th><span>8</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td><strong>REQUIRED <br> COURSES</strong></td>
+                <td>APPH E3200 <hr> MSAE E3111 <hr> APMA E3101 <hr> APPH E4901 </td>
+                <td>APPH E3100 <hr> APPH E3300 <hr> APMA E3102 </td>
+                <td>APPH E4300 <hr> APPH E4100 <hr> Course in first AP area <hr> APPH E4903</td>
+                <td>Course in second AP area <hr> APPH E4018</td>
+              </tr>
+              <tr>
+                <td><strong>TECH ELECTIVES</strong></td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>6 points</td>
+              </tr>
+              <tr>
+                <td><strong>NONTECH ELECTIVES</strong></td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+              </tr>
+              <tr>
+                <td><strong>TOTAL POINTS</strong></td>
+                <td>15</td>
+                <td>15</td>
+                <td>16</td>
+                <td>15</td>
+              </tr>
+
+            </tbody>
+          </table> 
+          <br>
+          <p>Important Notes:</p>
+          <ul>
+          <li>With the permission of the faculty adviser, students with advanced standing may start the calculus sequence at a higher level</li>
+          <li>Applied physics majors should satisfy their ODE requirement with the Mathematics Department (ordinarily MATH V2030). Students who take APMA E2101 prior to declaring their major in applied physics may use this course to satisfy their ODE requirement with the permission of the faculty advisor</li>
+          <li>They must include at least 2 points of laboratory courses. If PHYS W3081 is taken as part of the first two years of the program, these technical electives needs not include laboratory courses. Technical electives must be at the 3000 level or above unless prior approval is obtained.</li>
+          </ul>
+          </div><!-- end of applied physics courses column 2 --> 
+          
+        </div> <!-- end of applied physics courses row  -->
+    <br><br>
+<hr>
+ <div class = "row" id="bioMed"> <!-- bme info row --> 
+      <div class = "col-sm-1"></div>
+      <div class = "col-sm-10">
+        <h2>Biomedical Engineering</h2>
+        <p>Brief Description: Biomedical Engineering is a discipline that advances knowledge in engineering, biology, and medicine — and improves human health through cross-disciplinary activities that integrate the engineering sciences with the biomedical sciences and clinical practice. Bioengineering/Biomedical Engineering combines engineering expertise with medical needs for the enhancement of health care. It is a branch of engineering in which knowledge and skills are developed and applied to define and solve problems in biology and medicine.</p>
+        <p>Career paths include: Biomedical engineers develop devices and procedures that solve medical and health-related problems; do research to develop and evaluate systems and products such as artificial organs, prostheses (artificial devices that replace missing body parts), instrumentation, medical information systems, and health management and care delivery systems; design devices used in various medical procedures, imaging systems such as magnetic resonance imaging (MRI), and devices for automating insulin injections or controlling body functions.</p>
+        <a href="http://bulletin.engineering.columbia.edu/biomedical-engineering" target="http://bulletin.engineering.columbia.edu/biomedical-engineering" style="font-size:16px;">Department website</a> <br>
+        <a href="http://www.careereducation.columbia.edu/resources/industry/engg/biomed" target="http://www.careereducation.columbia.edu/resources/industry/engg/biomed" style="font-size:16px;">Biomedical engineering career education overview</a> <br> <br>         
+        <div class = "col-sm-6"></div>
+        </div><!--end bme info row --> 
+
+        <div class="row"> <!--bme courses row --> 
+        <div class="col-sm-1"></div>
+        <div id="firstTwo"class = "col-lg-6">
+          <table id="myTable" width="100%" border = "1">
+              <thead>
+              <tr id ="tableHeadings">
+              <th>SEMESTERS</th>
+                <th><span>1</span></th>
+                <th><span>2</span></th>
+                <th><span>3</span></th>
+                <th><span>4</span></th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr id ="mathsnspecialized">
+                <td><strong>MATHEMATICS</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS II" data-trigger="focus" data-content="Prerequisites: MATH V1101 or the equivalent. Methods of integration, applications of the integral, Taylor's theorem, infinite series. (SC)">MATH V1102</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS III" data-trigger="focus" data-content="Prerequisites: MATH V1101 or the equivalent. Vectors in dimensions 2 and 3, complex numbers and the complex exponential function with applications to differential equations, Cramer's rule, vector-valued functions of one variable, scalar-valued functions of several variables, partial derivatives, gradients, surfaces, optimization, the method of Lagrange multipliers. (SC)">MATH V1201</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS IV" data-trigger="focus" data-content="Prerequisites: MATH V1102, V1201, or the equivalent. Multiple integrals, Taylor's formula in several variables, line and surface integrals, calculus of vector fields, Fourier series. (SC)">MATH V1202</a><br> </td> <td></td>
+                </tr>
+                <tr id ="phys">
+                <td><strong>PHYSICS<br>(three tracks,<br>choose one)</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO MECHANICS & THERMO" data-trigger="focus" data-content="Corequisites: MATH V1101 or the equivalent. Fundamental laws of mechanics, kinematics and dynamics, work and energy, rotational dynamics, oscillations, gravitation, fluids, temperature and heat, gas laws, the first and second laws of thermodynamics.">W1401</a> <br> <a href="javascript://" data-toggle="popover" title="PHYSICS I:MECHANICS/RELATIVITY" data-trigger="focus" data-content="Corequisites: MATH V1102 or the equivalent. Fundamental laws of mechanics, kinematics and dynamics, work and energy, rotational dynamics, oscillations, gravitation, fluids, introduction to special relativity and relativistic kinematics. The course is preparatory for advanced work in physics and related fields.">W1601</a>  <br> <a href="javascript://" data-toggle="popover" title="ACCELERATED PHYSICS I" data-trigger="focus" data-content="Prerequisites: Advanced Placement in physics and mathematics, or the equivalent, and the instructor's permission. (A special placement meeting is held during Orientation.) This accelerated two-semester sequence covers the subject matter of PHYS W1601, W1602 and W2601, and is intended for those students who have an exceptionally strong background in both physics and mathematics. The course is preparatory for advanced work in physics and related fields. There is no accompanying laboratory; however, students are encouraged to take the intermediate laboratory, PHYS W3081, in the following year.">W2801</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO ELEC/MAGNETSM AND OPTCS" data-trigger="focus" data-content="Prerequisites: PHYS W1401. Corequisites: MATH V1102 or the equivalent. Electric fields, direct currents, magnetic fields, alternating currents, electromagnetic waves, polarization, geometrical optics, interference, and diffraction.">W1402</a> <br><a href="javascript://" data-toggle="popover" title="PHYSICS II:THERMO,ELEC/MAG-REC" data-trigger="focus" data-content="Prerequisites: PHYS W1601. Corequisites: MATH V1201 or the equivalent. Temperature and heat, gas laws, the first and second laws of thermodynamics, kinetic theory of gases, electric fields, direct currents, magnetic fields, alternating currents, electromagnetic waves. The course is preparatory for advanced work in physics and related fields.">W1602</a> <br><a href="javascript://" data-toggle="popover" title="ACCELERATED PHYSICS II" data-trigger="focus" data-content="Prerequisites: Advanced Placement in physics and mathematics, or the equivalent, and the instructor's permission. (A special placement meeting is held during Orientation.) This accelerated two-semester sequence covers the subject matter of PHYS W1601, W1602 and W2601, and is intended for those students who have an exceptionally strong background in both physics and mathematics. The course is preparatory for advanced work in physics and related fields. There is no accompanying laboratory; however, students are encouraged to take the intermediate laboratory, PHYS W3081, in the following year.">W2802</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="GENERAL PHYSICS-LECTURES" data-trigger="focus" data-content="Prerequisites: PHYS W1402. Corequisites: MATH V1201 or the equivalent. Classical waves and the wave equation, Fourier series and integrals, normal modes, wave-particle duality, the uncertainty principle, basic principles of quantum mechanics, energy levels, reflection and transmission coefficients, applications to atomic physics.">W1403</a>
+                 <br><a href="javascript://" data-toggle="popover" title="PHYSICS III:CLASS/QUANTUM WAVE" data-trigger="focus" data-content="Prerequisites: PHYS W1402 or W1602. Corequisites: MATH V1202 or the equivalent. Classical waves and the wave equation, geometrical optics, interference and diffraction, Fourier series and integrals, normal modes, wave-particle duality, the uncertainty principle, basic principles of quantum mechanics, energy levels, reflection and transmission coefficients, the harmonic oscillator. The course is preparatory for advanced work in physics and related fields.">W2601</a></td> <td></td>
+                  
+                </tr>
+                <tr id ="chembio">
+                <td><strong>CHEMISTRY<br>(three tracks, <br> choose one)</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="GENERAL CHEMISTRY I-LECTURES" data-trigger="focus" data-content="Corequisites: MATH V1101, unless students have taken AP Calculus. Preparation equivalent to one year of high school chemistry is assumed. Students lacking such preparation should plan independent study of chemistry over the summer or take CHEM W0001 before taking CHEM W1403. Topics include stoichiometry, states of matter, nuclear properties, electronic structures of atoms, periodic properties, chemical bonding, molecular geometry, introduction to quantum mechanics and atomic theory, introduction to organic and biological chemistry, solid state and materials science, polymer science and macromolecular structures and coordination chemistry. Although CHEM W1403 and CHEM W1404 are separate courses, students are expected to take both terms sequentially. The order of presentation of topics may differ from the order presented here, and from year to year. Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">C1403</a><br> <br> <a href="javascript://" data-toggle="popover" title="2ND TERM GEN CHEM (INTENSIVE)" data-trigger="focus" data-content="Prerequisites: a grade of "B" or better in CHEM W1403 OR acceptable performance on the Department placement exam. Corequisites: MATH V1102 Topics include: gases (kinetic theory of gases); binary collision model for chemical reactions; chemical kinetics; acid-base equilibria; thermochemistry (thermodynamics I); spontaneous processes (thermodymanics II); chemical bonding in polyatomic molecules.  Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">W1604</a> <br>
+                  <a href="javascript://" data-toggle="popover" title="INTENSIVE ORGANIC CHEMISTRY I" data-trigger="focus" data-content="Prerequisites: a grade of 5 on the Chemistry Advanced Placement exam and an acceptable grade on the Department placement exam or an acceptable grade in CHEM W1604. Premedical students may take CHEM W3045, CHEM W3046, CHEM W2507 and CHEM W3545 to meet the minimum requirements for admission to medical school. This course covers the same material as CHEM W3443 - CHEM  W3444, but is intended for students who have learned the principles of general chemistry in high school OR have completed CHEM W1604 in their first year at Columbia. First year students enrolled in CHEM W3045-CHEM W3046 are expected to enroll concurrently in CHEM W2507. Although CHEM W3045 and CHEM W3046 are separate courses, students are expected to take both terms sequentially. A recitation section is required. Please check the Directory of Classes for details and also speak with the TA for the course.">C3045</a>
+                  </td>
+                  <td><a href="javascript://" data-toggle="popover" title="GENERAL CHEMISTRY II-LECTURES" data-trigger="focus" data-content="Prerequisites: CHEM W1403. Corequisites: MATH V1101. Although CHEM W1403 and CHEM W1404 are separate courses, students are expected to take both terms sequentially. Topics include gases, kinetic theory of gases, states of matter: liquids and solids, chemical equilibria, applications of equilibria, acids and bases, chemical thermodynamics, energy, enthalpy, entropy, free energy, periodic properties, chemical kinetics, and electrochemistry. The order of presentation of topics may differ from the order presented here, and from year to year.  Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">C1404</a>, <br> <a href="javascript://" data-toggle="popover" title="FIRST-YR SCIENCE RESEARCH SEM" data-trigger="focus" >C1500</a> (or semester 1) <br> <a href="javascript://" data-toggle="popover" title="INTENSVE GENERAL CHEMISTRY-LAB" data-trigger="focus" data-content="Prerequisites: CHEM W1604 or CHEM W3045. A student-centered experimental course intended for students who are taking or have completed CHEM W1604 (Second Semester General Chemistry Intensive Lecture offered in Fall), CHEM W3045 (Intensive Organic Chemistry offered in Fall), or CHEM W3046 (Intensive Organic Chemistry Lecture offered in Spring). The course will provide an introduction to theory and practice of modern experimental chemistry in a contextual, student-centered collaborative learning environment. This course differs from CHEM W1500 in its pedagogy and its emphasis on instrumentation and methods. Students must also attend the compulsory Mentoring Session. Please check the Directory of Classes for details. Please note that CHEM W2507 is offered in the fall and spring semesters.">C2507</a> <br>
+                  <a href="javascript://" data-toggle="popover" title="INTENSVE ORG CHEM-FOR 1ST YEAR" data-trigger="focus" data-content="Prerequisites: CHEM W3045 Premedical students may take CHEM W3045, CHEM W3046, and CHEM W3545 to meet the minimum requirements for admission to medical school. This course covers the same material as CHEM W3443-CHEM  W3444, but is intended for students who have learned the principles of general chemistry in high school OR have completed CHEM W1604 in their first year at Columbia. First year students enrolled in CHEM W3045-CHEM W3046 are expected to enroll concurrently in CHEM W2507. Although CHEM W3045 and CHEM W3046 are separate courses, students are expected to take both terms sequentially. A recitation section is required.  Please check the Directory of Classes for details and also speak with the TA for the course.">C3046</a>, <a href="javascript://" data-toggle="popover" title="INTENSVE GENERAL CHEMISTRY-LAB" data-trigger="focus" data-content="Prerequisites: CHEM W1604 or CHEM W3045. A student-centered experimental course intended for students who are taking or have completed CHEM W1604 (Second Semester General Chemistry Intensive Lecture offered in Fall), CHEM W3045 (Intensive Organic Chemistry offered in Fall), or CHEM W3046 (Intensive Organic Chemistry Lecture offered in Spring). The course will provide an introduction to theory and practice of modern experimental chemistry in a contextual, student-centered collaborative learning environment. This course differs from CHEM W1500 in its pedagogy and its emphasis on instrumentation and methods. Students must also attend the compulsory Mentoring Session. Please check the Directory of Classes for details. Please note that CHEM W2507 is offered in the fall and spring semesters.">C2507</a> </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr id="english">
+                <td><strong>ENGLISH<br>COMPOSITION<br></strong></td>
+                  <td colspan = "2" ><a href="javascript://" data-toggle="popover" title="UNIVERSITY WRITING" data-trigger="focus" data-content="Theme options at Columbia Core website">C1010</a> <br> either semester </td>
+                  <td></td> <td></td>
+                </tr>
+                <tr id="nonRequiredTech">
+                <td><strong>REQUIRED <br> NONTECHNICAL <br> ELECTIVES</strong></td>
+                  <td colspan = "2"><a href="javascript://" data-toggle="popover" title="MASTERPIECES OF WESTERN ART" data-trigger="focus" data-content="Discussion and analysis of the artistic qualities and significance of selected works of painting, sculpture, and architecture from the Parthenon in Athens to works of the 20th century.">HUMA W1121</a> <br><strong>or</strong> <a href="javascript://" data-toggle="popover" title="MASTERPIECES OF WESTERN MUSIC" data-trigger="focus" data-content="Analysis and discussion of representative works from the Middle Ages to the present.">W1123</a>
+                  </td>
+                  
+                  <td><a href="javascript://" data-toggle="popover" title="EURPN LIT-PHILOS MASTERPIECS I" data-trigger="focus" data-content="Taught by members of the Departments of Classics; English and Comparative Literature; French; German; Italian; Middle Eastern, South Asian, and African Studies; Philosophy; Religion; Slavic Languages; and Spanish; as well as members of the Society of Fellows. Major works by over twenty authors, ranging in time, theme, and genre, from Homer to Virginia Woolf. Students are expected to write at least two papers, to complete two examinations each semester, and to participate actively in class discussions.">HUMA C1001</a> <br> <a href="javascript://" data-toggle="popover" title="CONTEMP WESTERN CIVILIZATION I" data-trigger="focus" data-content="Taught by members of the Departments of Anthropology, Classics, English and Comparative Literature, French, German, History, Middle East and Asian Languages and Cultures, Philosophy, Political Science, Religion, Slavic Languages, and Sociology; and members of the Society of Fellows. A study in their historical context of major contributions to the intellectual traditions that underpin contemporary civilization. Emphasis is on the history of political, social, and philosophical thought. Students are expected to write at least three papers to complete two examinations, and to participate actively in class discussions.">COCI C1101</a> <br> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Options for global core at http://bulletin.columbia.edu/columbia-college/core-curriculum/global-core-requirement/">Global Core</a> </td>
+                  <td><a href="javascript://" data-toggle="popover" title="EURPN LIT-PHILOS MASTRPIECS II" data-trigger="focus" data-content="Taught by members of the Departments of Classics; English and Comparative Literature; French; German; Italian; Middle Eastern, South Asian, and African Studies; Philosophy; Religion; Slavic Languages; and Spanish; as well as members of the Society of Fellows. Major works by over twenty authors, ranging in time, theme, and genre, from Homer to Virginia Woolf. Students are expected to write at least two papers, to complete two examinations each semester, and to participate actively in class discussions.">HUMA C1002</a> <br> <a href="javascript://" data-toggle="popover" title="CONTEMP WESTRN CIVILIZATION II" data-trigger="focus" data-content="Taught by members of the Departments of Anthropology, Classics, English and Comparative Literature, French, German, History, Middle East and Asian Languages and Cultures, Philosophy, Political Science, Religion, Slavic Languages, and Sociology; and members of the Society of Fellows. A study in their historical context of major contributions to the intellectual traditions that underpin contemporary civilization. Emphasis is on the history of political, social, and philosophical thought. Students are expected to write at least three papers to complete two examinations, and to participate actively in class discussions.">COCI C1102</a> <br> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Options for global core at http://bulletin.columbia.edu/columbia-college/core-curriculum/global-core-requirement/">Global Core</a> <br> <br> <a href="javascript://" data-toggle="popover" title="PRINCIPLES OF ECONOMICS" data-trigger="focus" data-content="Corequisites: ECON W1155 recitation section with the same instructor. How a market economy determines the relative prices of goods, factors of production, and the allocation of resources and the circumstances under which it does it efficiently. Why such an economy has fluctuations and how they may becontrolled.">ECON W1105</a> <br><strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="PRINCIPLES OF ECONOMICS-DISC">W1155 recitation</a></td> 
+                </tr>
+                <tr id="nonRequiredTech">
+                <td><strong>TECHNICAL <br> REQUIREMENTS</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO ELECTRICAL ENGINEERING" data-trigger="focus" data-content="Prerequisites: MATH V1101. Basic concepts of electrical engineering. Exploration of selected topics and their application. Electrical variables, circuit laws, nonlinear and linear elements, ideal and real sources, transducers, operational amplifiers in simple circuits, external behavior of diodes and transistors, first order RC and RL circuits. Digital representation of a signal, digital logic gates, flipflops. A lab is an integral part of the course. Required of electrical engineering and computer engineering majors.">ELEN E1201</a> <hr> <a href="javascript://" data-toggle="popover" title="INTRO BIO I: BIOCHEM,GEN,MOLEC" data-trigger="focus" data-content="Prerequisites: one year of college chemistry, or a strong high school chemistry background. Lecture and recitation. Recommended as the introductory biology course for biology and related majors, and for premedical students. Fundamental principles of biochemistry, molecular biology, and genetics. Website: http://www.columbia.edu/cu/biology/courses/c2005/index.html.">BIOL C2005</a> 
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO APPLIED MATHEMATICS" data-trigger="focus" data-content="Prerequisites: Calculus III. A unified, single-semester introduction to differential equations and linear algebra with emphases on (1) elementary analytical and numerical technique and (2) discovering the analogs on the continuous and discrete sides of the mathematics of linear operators: superposition, diagonalization, fundamental solutions. Concepts are illustrated with applications using the language of engineering, the natural sciences, and the social sciences. Students execute scripts in Mathematica and MATLAB (or the like) to illustrate and visualize course concepts (programming not required).">APMA E2101</a> <hr> <a href="javascript://" data-toggle="popover" title="INTRO BIO II:CELL BIO,DEV,PHYS" data-trigger="focus" data-content="Prerequisites: EEEB W2001 or BIOL C2005, or the instructor's permission. Lecture and recitation. Recommended second term of biology for majors in biology and related majors, and for premedical students. Cellular biology and development; physiology of cells and organisms. Website: http://www.columbia.edu/cu/biology/courses/c2006/ New for Spring 2015, students must register for a recitation section BIOL C2016.">BIOL 2006</a> </td>
+                </tr>
+                <tr>
+                <td><strong>COMPUTER <br> SCIENCE</strong></td>
+                  <td colspan=4><a href="javascript://" data-toggle="popover" title="INTRO TO COMP FOR ENG/APP SCI" data-trigger="focus" data-content="An interdisciplinary course in computing intended for first year SEAS students. Introduces computational thinking, algorithmic problem solving and Python programming with applications in science and engineering. Assumes no prior programming background.">ENGI E1006</a><br> any semester</td>
+                </tr>
+                <tr>
+                <td><strong>PHYSICAL <br> EDUCATION</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="PHYSICAL ED" data-trigger="focus" data-content="The times listed in the on-line Directory of Classes are the actual class times for each time preference. Students should allow additional time for showering, dressing, equipment exchange, and travel to next class. A description of the scheduled activities for each time preference is posted on the department Web site, http://www.dodgefitnesscenter.com.">C1001</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="PHYSICAL ED" data-trigger="focus" data-content="The times listed in the on-line Directory of Classes are the actual class times for each time preference. Students should allow additional time for showering, dressing, equipment exchange, and travel to next class. A description of the scheduled activities for each time preference is posted on the department Web site, http://www.dodgefitnesscenter.com.">C1002</a></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                <td><strong>THE ART <br> OF <br> ENGINEERING</strong></td>
+                  <td colspan=2><a href="javascript://" data-toggle="popover" title="THE ART OF ENGINEERING" data-trigger="focus" data-content="Core requirement for all entering SEAS students. This course is a bridge between the science-oriented, high school way of thinking and the engineering point of view. Fundamental concepts of math and science are reviewed and re-framed in an engineering context, with numerous examples of each concept drawn from all disciplines of engineering represented at Columbia. Non-technical issues of importance in professional engineering practice such as ethics, engineering project management, and societal impact are addressed. Lab fee: $350.">E1102</a> <br> either semester</td>
+                  <td></td>
+                  <td></td>                
+                </tr>
+            </tbody>
+          </table>
+          </div>
+          
+          <div id="secondTwo" class = "col-lg-6">
+          <table id="myTable" width="100%" border = "1">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+
+            <thead>
+              <tr>
+              <th></th>
+                <th><span>5</span></th>
+                <th><span>6</span></th>
+                <th><span>7</span></th>
+                <th><span>8</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td><strong>REQUIRED <br> COURSES</strong></td>
+                <td><a href="javascript://" data-toggle="popover" title="BIOMEDICAL ENGINEERING I" data-trigger="focus" data-content="
+                Prerequisites: BIOL C2005 and BIOL C2006, or with instructor's permission Corequisites: BMEN E3810, E4001 Various concepts within the field of biomedical engineering, foundational knowledge of engineering methodology applied to biological and/or medical problems through modules in biomechanics, biomaterials, and cell & tissue engineering.
+                ">BMEN E3010</a> <hr> <a href="javascript://" data-toggle="popover" title="BIOMEDICAL ENGINEERING LAB I" data-trigger="focus" data-content="Fundamental considerations of wave mechanics; design philosophies; reliability and risk concepts; basics of fluid mechanics; design of structures subjected to blast; elements of seismic design; elements of fire design; flood considerations; advanced analysis in support of structural design.">BMEN E3810</a> <hr> <a href="javascript://" data-toggle="popover" title="QUANTITATIVE PHYSIOLOGY I" data-trigger="focus" data-content="Prerequisites: BIOL C2005 and C2006. Corequisites: BMEN E3010 and E3810 Physiological systems at the cellular and molecular level are examined in a highly quantitative context. Topics include chemical kinetics, molecular binding and enzymatic processes, molecular motors, biological membranes, and muscles.">BMEN E4001</a> <hr> <a href="javascript://" data-toggle="popover" title="BIOSTATISTICS FOR ENGINEERS" data-trigger="focus" data-content="Prerequisites: MATH V1202 and APMA E2101 Fundamental concepts of probability and statistics applied to biology and medicine. Probability distributions, hypothesis testing and inference, summarizing data and testing for trends. Signal detection theory and the receiver operator characteristic. Lectures accompanied by data analysis assignments using MATLAB as well as discussion of case studies in biomedicine.">BMEN E4110</a></td>
+                <td><a href="javascript://" data-toggle="popover" title="BIOMEDICAL ENGINEERING II" data-trigger="focus" data-content="Prerequisites: BIOL C2005 and BIOL C2006 or with instructor's permission. Corequisites: BMEN E3820, E4002 Various concepts within the field of biomedical engineering, foundational knowledge of engineering methodology applied to biological and/or medical problems through modules in biomechanics, bioinstrumentation, and biomedical Imaging.">BMEN E3020</a> <hr> <a href="javascript://" data-toggle="popover" title="BIOMEDICAL ENGINEERING LAB II" data-trigger="focus" data-content="Biomedical experimental design and hypothesis testing. Statistical analysis of experimental measurements. Analysis of experimental measurements. Analysis of variance, post hoc testing. Fluid shear and cell adhesion, neuro-electrophysiology, soft tissue biomechanics, biomecial imaging and ultrasound, characterization of excitable tissues, microfluidics.">BMEN E3820</a> <hr> <a href="javascript://" data-toggle="popover" title="QUANT PHYSIOLOGY II:ORGAN SYST" data-trigger="focus" data-content="Prerequisites: BIOL C2005 and C2006. Corequisites: BMEN E3020, E3820. Students are introduced to a quantitative, engineering approach to cellular biology and mammalian physiology. Beginning with biological issues related to the cell, the course progresses to considerations of the major physiological systems of the human body (nervous, circulatory, respiratory, renal).">BMEN E4002</a> <hr> <a href="javascript://" data-toggle="popover" title="TECHNICAL ELECTIVE" data-trigger="focus" data-content="A list of options can be found at http://bulletin.engineering.columbia.edu/undergraduate-program">Technical elective</a>  </td>
+                <td><a href="javascript://" data-toggle="popover" title="BIOMEDICAL ENGINEERING DESIGN" data-trigger="focus" data-content="A two-semester design sequence to be taken in the senior year. Elements of the design process, with specific applications to biomedical engineering: concept formulation, systems synthesis, design analysis, optimization, biocompatibility, impact on patient health and comfort, health care costs, regulatory issues, and medical ethics. Selection and execution of a project involving the design of an actual engineering device or system. Introduction to entrepreneurship, biomedical start-ups, and venture capital. Semester I: statistical analysis of detection/classification systems (receiver operation characteristic analysis, logistic regression), development of design prototype, need, approach, benefits and competition analysis. Semester II: spiral develop process and testing, iteration and refinement of the initial design/prototype and business plan development. A lab fee of $100 each is collected.">BMEN E3910</a> <hr> <a href="javascript://" data-toggle="popover" title="TECHNICAL ELECTIVE" data-trigger="focus" data-content="A list of options can be found at http://bulletin.engineering.columbia.edu/undergraduate-program">Technical elective</a> <hr> <a href="javascript://" data-toggle="popover" title="TECHNICAL ELECTIVE" data-trigger="focus" data-content="A list of options can be found at http://bulletin.engineering.columbia.edu/undergraduate-program">Technical elective</a> <hr> <a href="javascript://" data-toggle="popover" title="TECHNICAL ELECTIVE" data-trigger="focus" data-content="A list of options can be found at http://bulletin.engineering.columbia.edu/undergraduate-program">Technical elective</a> </td>
+                <td><a href="javascript://" data-toggle="popover" title="BIOMEDICAL ENGIN DESIGN II" data-trigger="focus" data-content="A two-semester design sequence to be taken in the senior year. Elements of the design process, with specific applications to biomedical engineering: concept formulation, systems synthesis, design analysis, optimization, biocompatibility, impact on patient health and comfort, health care costs, regulatory issues, and medical ethics. Selection and execution of a project involving the design of an actual engineering device or system. Introduction to entrepreneurship, biomedical start-ups, and venture capital. Semester I: statistical analysis of detection/classification systems (receiver operation characteristic analysis, logistic regression), development of design prototype, need, approach, benefits and competition analysis. Semester II: spiral develop process and testing, iteration and refinement of the initial design/prototype and business plan development. A lab fee of $100 each is collected.">BMEN E3920</a><hr> <a href="javascript://" data-toggle="popover" title="TECHNICAL ELECTIVE" data-trigger="focus" data-content="A list of options can be found at http://bulletin.engineering.columbia.edu/undergraduate-program">Technical elective</a> <hr><a href="javascript://" data-toggle="popover" title="TECHNICAL ELECTIVE" data-trigger="focus" data-content="A list of options can be found at http://bulletin.engineering.columbia.edu/undergraduate-program">Technical elective</a><hr> <a href="javascript://" data-toggle="popover" title="TECHNICAL ELECTIVE" data-trigger="focus" data-content="A list of options can be found at http://bulletin.engineering.columbia.edu/undergraduate-program">Technical elective</a>  </td>
+              </tr>
+             
+              <tr>
+                <td><strong>NONTECH ELECTIVES</strong></td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><strong>TOTAL POINTS</strong></td>
+                <td>15</td>
+                <td>15</td>
+                <td>16</td>
+                <td>13</td>
+              </tr>
+
+            </tbody>
+          </table> 
+          <br>
+          <p>Important Notes:</p>
+          <ul>
+          <li>Five of seven technical electives must have engineering content, and two of them must be from the Biomedical Engineering Department.</li>
+          </ul>
+          </div><!-- end of bme courses column 2 --> 
+          
+        </div> <!-- end of BME courses row  --> 
+<hr>
+ <div class = "row" id="chemE"> <!-- bme info row --> 
+      <div class = "col-sm-1"></div>
+      <div class = "col-sm-10">
+        <h2>Chemical Engineering</h2>
+        <p>Brief Description: Chemical Engineering enables the production of useful and essential chemicals and materials by processes that require controlled physical, chemical, or biological transformations. The Chemical Engineer guides the passage of the product from the laboratory to the marketplace, from ideas and prototypes to functioning articles and processes, from theory to reality. This expertise is essential to production, marketing and application in areas such as pharmaceuticals, high performance materials in the automotive and aerospace industries, semiconductors in the electronics industry, paints and plastics, consumer products, petroleum refining, industrial chemicals, synthetic fibers, and bioengineering and biotechnology areas from artificial organs to biosensors.</p>
+        <p>Career paths include: The Chemical Engineering degree is a passport to exciting careers in directly related industries as diverse as biochemical engineering,environmental management, and pharmaceuticals, and graduates launch careers in medicine, law, management, banking and finance, and politics. Chemical engineers can be found in industry in fields as diverse as fuels, electronics, food and consumer products, pharmaceuticals, environmental engineering, and pulp and paper.</p>
+        <a href="http://bulletin.engineering.columbia.edu/chemical-engineering" target="http://bulletin.engineering.columbia.edu/chemical-engineering" style="font-size:16px;">Department website</a> <br>
+        <a href="http://www.careereducation.columbia.edu/sites/cce/files/what_can_you_do_with_a_degree_in_chemical_engineering.pdf" target="http://www.careereducation.columbia.edu/sites/cce/files/what_can_you_do_with_a_degree_in_chemical_engineering.pdf" style="font-size:16px;">Chemical engineering career education overview</a> <br> <br>
+
+        <div class = "col-sm-6"></div>
+        </div><!--end chem info row --> 
+
+        <div class="row"> <!--chem courses row --> 
+        <div class="col-sm-1"></div>
+        <div id="firstTwo"class = "col-lg-6">
+          <table id="myTable" width="100%" border = "1">
+              <thead>
+              <tr id ="tableHeadings">
+              <th>SEMESTERS</th>
+                <th><span>1</span></th>
+                <th><span>2</span></th>
+                <th><span>3</span></th>
+                <th><span>4</span></th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr id ="mathsnspecialized">
+                <td><strong>MATHEMATICS</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS II" data-trigger="focus" data-content="Prerequisites: MATH V1101 or the equivalent. Methods of integration, applications of the integral, Taylor's theorem, infinite series. (SC)">MATH V1102</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS III" data-trigger="focus" data-content="Prerequisites: MATH V1101 or the equivalent. Vectors in dimensions 2 and 3, complex numbers and the complex exponential function with applications to differential equations, Cramer's rule, vector-valued functions of one variable, scalar-valued functions of several variables, partial derivatives, gradients, surfaces, optimization, the method of Lagrange multipliers. (SC)">MATH V1201</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="CALCULUS IV" data-trigger="focus" data-content="Prerequisites: MATH V1102, V1201, or the equivalent. Multiple integrals, Taylor's formula in several variables, line and surface integrals, calculus of vector fields, Fourier series. (SC)">MATH V1202</a><br> </td><td><a href="javascript://" data-toggle="popover" title="CALCULUS IV" data-trigger="focus" data-content="Prerequisites: MATH V1102, V1201, or the equivalent. Multiple integrals, Taylor's formula in several variables, line and surface integrals, calculus of vector fields, Fourier series. (SC)">MATH V1202</a> <br> <strong>and</strong> either <br> 
+                  <a href="javascript://" data-toggle="popover" title="ORDINARY DIFFERENTIAL EQUATION" data-trigger="focus" data-content="Prerequisites: MATH V1102-MATH V1201 or the equivalent. Special differential equations of order one. Linear differential equations with constant and variable coefficients. Systems of such equations. Transform and series solution techniques. Emphasis on applications.">MATH V2030</a> <br><strong>or</strong><br> <a href="javascript://" data-toggle="popover" title="INTRO TO APPLIED MATHEMATICS" data-trigger="focus" data-content="Prerequisites: Calculus III. A unified, single-semester introduction to differential equations and linear algebra with emphases on (1) elementary analytical and numerical technique and (2) discovering the analogs on the continuous and discrete sides of the mathematics of linear operators: superposition, diagonalization, fundamental solutions. Concepts are illustrated with applications using the language of engineering, the natural sciences, and the social sciences. Students execute scripts in Mathematica and MATLAB (or the like) to illustrate and visualize course concepts (programming not required).">APMA E2101</a> </td>
+                </tr>
+                <tr id ="phys">
+                <td><strong>PHYSICS<br>(three tracks,<br>choose one)</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO MECHANICS & THERMO" data-trigger="focus" data-content="Corequisites: MATH V1101 or the equivalent. Fundamental laws of mechanics, kinematics and dynamics, work and energy, rotational dynamics, oscillations, gravitation, fluids, temperature and heat, gas laws, the first and second laws of thermodynamics.">W1401</a>     <br> <a href="javascript://" data-toggle="popover" title="PHYSICS I:MECHANICS/RELATIVITY" data-trigger="focus" data-content="Corequisites: MATH V1102 or the equivalent. Fundamental laws of mechanics, kinematics and dynamics, work and energy, rotational dynamics, oscillations, gravitation, fluids, introduction to special relativity and relativistic kinematics. The course is preparatory for advanced work in physics and related fields.">W1601</a> <br> <a href="javascript://" data-toggle="popover" title="ACCELERATED PHYSICS I" data-trigger="focus" data-content="Prerequisites: Advanced Placement in physics and mathematics, or the equivalent, and the instructor's permission. (A special placement meeting is held during Orientation.) This accelerated two-semester sequence covers the subject matter of PHYS W1601, W1602 and W2601, and is intended for those students who have an exceptionally strong background in both physics and mathematics. The course is preparatory for advanced work in physics and related fields. There is no accompanying laboratory; however, students are encouraged to take the intermediate laboratory, PHYS W3081, in the following year.">W2801</a>   </td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO ELEC/MAGNETSM AND OPTCS" data-trigger="focus" data-content="Prerequisites: PHYS W1401. Corequisites: MATH V1102 or the equivalent. Electric fields, direct currents, magnetic fields, alternating currents, electromagnetic waves, polarization, geometrical optics, interference, and diffraction.">W1402</a> <br><a href="javascript://" data-toggle="popover" title="PHYSICS II:THERMO,ELEC/MAG-REC" data-trigger="focus" data-content="Prerequisites: PHYS W1601. Corequisites: MATH V1201 or the equivalent. Temperature and heat, gas laws, the first and second laws of thermodynamics, kinetic theory of gases, electric fields, direct currents, magnetic fields, alternating currents, electromagnetic waves. The course is preparatory for advanced work in physics and related fields.">W1602</a><br><a href="javascript://" data-toggle="popover" title="ACCELERATED PHYSICS II" data-trigger="focus" data-content="Prerequisites: Advanced Placement in physics and mathematics, or the equivalent, and the instructor's permission. (A special placement meeting is held during Orientation.) This accelerated two-semester sequence covers the subject matter of PHYS W1601, W1602 and W2601, and is intended for those students who have an exceptionally strong background in both physics and mathematics. The course is preparatory for advanced work in physics and related fields. There is no accompanying laboratory; however, students are encouraged to take the intermediate laboratory, PHYS W3081, in the following year.">W2802</a></td><br> 
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO EXPERIMENTAL PHYS-LAB" data-trigger="focus" data-content="Prerequisites: PHYS W1401 and W1402. Laboratory work associated with the two prerequisite lecture courses. Experiments in mechanics, thermodynamics, electricity, magnetism, optics, wave motion, atomic physics, and nuclear physics. Note: Students cannot receive credit for both PHYS W1493 and W1494.">Lab W1494</a><br><a href="javascript://" data-toggle="popover" title="INTERMEDIATE LABORATORY WORK" data-trigger="focus" data-content="Prerequisites: PHYS W2601 or PHYS W2802. Primarily for junior and senior physics majors; other majors must obtain the instructor's permission. Each experiment is chosen by the student in consultation with the instructor. Each section meets one afternoon per week, with registration in each section limited by the laboratory capacity. Experiments (classical and modern) cover topics in electricity, magnetism, optics, atomic physics, and nuclear physics.">Lab W3081</a></td><td></td>
+                  
+                </tr>
+                <tr id ="chembio">
+                <td><strong>CHEMISTRY<br>(three tracks, <br> choose one)</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="GENERAL CHEMISTRY I-LECTURES" data-trigger="focus" data-content="Corequisites: MATH V1101, unless students have taken AP Calculus. Preparation equivalent to one year of high school chemistry is assumed. Students lacking such preparation should plan independent study of chemistry over the summer or take CHEM W0001 before taking CHEM W1403. Topics include stoichiometry, states of matter, nuclear properties, electronic structures of atoms, periodic properties, chemical bonding, molecular geometry, introduction to quantum mechanics and atomic theory, introduction to organic and biological chemistry, solid state and materials science, polymer science and macromolecular structures and coordination chemistry. Although CHEM W1403 and CHEM W1404 are separate courses, students are expected to take both terms sequentially. The order of presentation of topics may differ from the order presented here, and from year to year. Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">C1403</a> <strong>and</strong><br> <a href="javascript://" data-toggle="popover" title="FIRST-YR SCIENCE RESEARCH SEM" data-trigger="focus" >C1500</a> <br> <a href="javascript://" data-toggle="popover" title="2ND TERM GEN CHEM (INTENSIVE)" data-trigger="focus" data-content="Prerequisites: a grade of "B" or better in CHEM W1403 OR acceptable performance on the Department placement exam. Corequisites: MATH V1102 Topics include: gases (kinetic theory of gases); binary collision model for chemical reactions; chemical kinetics; acid-base equilibria; thermochemistry (thermodynamics I); spontaneous processes (thermodymanics II); chemical bonding in polyatomic molecules.  Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">W1604</a> <br>
+                  <a href="javascript://" data-toggle="popover" title="INTENSIVE ORGANIC CHEMISTRY I" data-trigger="focus" data-content="Prerequisites: a grade of 5 on the Chemistry Advanced Placement exam and an acceptable grade on the Department placement exam or an acceptable grade in CHEM W1604. Premedical students may take CHEM W3045, CHEM W3046, CHEM W2507 and CHEM W3545 to meet the minimum requirements for admission to medical school. This course covers the same material as CHEM W3443 - CHEM  W3444, but is intended for students who have learned the principles of general chemistry in high school OR have completed CHEM W1604 in their first year at Columbia. First year students enrolled in CHEM W3045-CHEM W3046 are expected to enroll concurrently in CHEM W2507. Although CHEM W3045 and CHEM W3046 are separate courses, students are expected to take both terms sequentially. A recitation section is required. Please check the Directory of Classes for details and also speak with the TA for the course.">C3045</a>
+                  </td>
+                  <td><a href="javascript://" data-toggle="popover" title="GENERAL CHEMISTRY II-LECTURES" data-trigger="focus" data-content="Prerequisites: CHEM W1403. Corequisites: MATH V1101. Although CHEM W1403 and CHEM W1404 are separate courses, students are expected to take both terms sequentially. Topics include gases, kinetic theory of gases, states of matter: liquids and solids, chemical equilibria, applications of equilibria, acids and bases, chemical thermodynamics, energy, enthalpy, entropy, free energy, periodic properties, chemical kinetics, and electrochemistry. The order of presentation of topics may differ from the order presented here, and from year to year.  Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.">C1404</a><br> <a href="javascript://" data-toggle="popover" title="INTENSVE GENERAL CHEMISTRY-LAB" data-trigger="focus" data-content="Prerequisites: CHEM W1604 or CHEM W3045. A student-centered experimental course intended for students who are taking or have completed CHEM W1604 (Second Semester General Chemistry Intensive Lecture offered in Fall), CHEM W3045 (Intensive Organic Chemistry offered in Fall), or CHEM W3046 (Intensive Organic Chemistry Lecture offered in Spring). The course will provide an introduction to theory and practice of modern experimental chemistry in a contextual, student-centered collaborative learning environment. This course differs from CHEM W1500 in its pedagogy and its emphasis on instrumentation and methods. Students must also attend the compulsory Mentoring Session. Please check the Directory of Classes for details. Please note that CHEM W2507 is offered in the fall and spring semesters.">C2507</a> <br>
+                  <a href="javascript://" data-toggle="popover" title="INTENSVE ORG CHEM-FOR 1ST YEAR" data-trigger="focus" data-content="Prerequisites: CHEM W3045 Premedical students may take CHEM W3045, CHEM W3046, and CHEM W3545 to meet the minimum requirements for admission to medical school. This course covers the same material as CHEM W3443-CHEM  W3444, but is intended for students who have learned the principles of general chemistry in high school OR have completed CHEM W1604 in their first year at Columbia. First year students enrolled in CHEM W3045-CHEM W3046 are expected to enroll concurrently in CHEM W2507. Although CHEM W3045 and CHEM W3046 are separate courses, students are expected to take both terms sequentially. A recitation section is required.  Please check the Directory of Classes for details and also speak with the TA for the course.">C3046</a><strong>and</strong> <a href="javascript://" data-toggle="popover" title="INTENSVE GENERAL CHEMISTRY-LAB" data-trigger="focus" data-content="(end of the C3045 track) Prerequisites: CHEM W1604 or CHEM W3045. A student-centered experimental course intended for students who are taking or have completed CHEM W1604 (Second Semester General Chemistry Intensive Lecture offered in Fall), CHEM W3045 (Intensive Organic Chemistry offered in Fall), or CHEM W3046 (Intensive Organic Chemistry Lecture offered in Spring). The course will provide an introduction to theory and practice of modern experimental chemistry in a contextual, student-centered collaborative learning environment. This course differs from CHEM W1500 in its pedagogy and its emphasis on instrumentation and methods. Students must also attend the compulsory Mentoring Session. Please check the Directory of Classes for details. Please note that CHEM W2507 is offered in the fall and spring semesters.">C2507</a> </td>
+                  <td><br><br><a href="javascript://" data-toggle="popover" title="ORGANIC CHEMISTRY I-LECTURES" data-trigger="focus" data-content="Prerequisites: CHEM W1404 or CHEM W1604 and CHEM W1500 The principles of organic chemistry. The structure and reactivity of organic molecules are examined from the standpoint of modern theories of chemistry. Topics include stereochemistry, reactions of organic molecules, mechanisms of organic reactions, syntheses and degradations of organic molecules, and spectroscopic techniques of structure determination. Although CHEM W3443 and CHEM W3444 are separate courses, students are expected to take both terms sequentially.  Students must ensure they register for the recitation which corresponds to the lecture section. Please check the Directory of Classes for details.">C3443</a> </td>
+                  <td></td>
+                </tr>
+                <tr id="english">
+                <td><strong>ENGLISH<br>COMPOSITION<br>(three tracks,<br>choose one)</strong></td>
+                  <td colspan = "2" ><a href="javascript://" data-toggle="popover" title="UNIVERSITY WRITING" data-trigger="focus" data-content="Theme options at Columbia Core website">C1010</a> <br> either semester </td>
+                  <td></td> <td></td>
+                </tr>
+                <tr id="nonRequiredTech">
+                 <td><strong>REQUIRED <br> NONTECHNICAL <br> ELECTIVES</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript://" data-toggle="popover" title="EURPN LIT-PHILOS MASTERPIECS I" data-trigger="focus" data-content="Taught by members of the Departments of Classics; English and Comparative Literature; French; German; Italian; Middle Eastern, South Asian, and African Studies; Philosophy; Religion; Slavic Languages; and Spanish; as well as members of the Society of Fellows. Major works by over twenty authors, ranging in time, theme, and genre, from Homer to Virginia Woolf. Students are expected to write at least two papers, to complete two examinations each semester, and to participate actively in class discussions.">HUMA C1001</a> <br> <a href="javascript://" data-toggle="popover" title="CONTEMP WESTERN CIVILIZATION I" data-trigger="focus" data-content="Taught by members of the Departments of Anthropology, Classics, English and Comparative Literature, French, German, History, Middle East and Asian Languages and Cultures, Philosophy, Political Science, Religion, Slavic Languages, and Sociology; and members of the Society of Fellows. A study in their historical context of major contributions to the intellectual traditions that underpin contemporary civilization. Emphasis is on the history of political, social, and philosophical thought. Students are expected to write at least three papers to complete two examinations, and to participate actively in class discussions.">COCI C1101</a> <br> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Options for global core at http://bulletin.columbia.edu/columbia-college/core-curriculum/global-core-requirement/">Global Core</a> <br> <br> <a href="javascript://" data-toggle="popover" title="MASTERPIECES OF WESTERN ART" data-trigger="focus" data-content="Discussion and analysis of the artistic qualities and significance of selected works of painting, sculpture, and architecture from the Parthenon in Athens to works of the 20th century.">HUMA W1121</a> <br><strong>or</strong> <a href="javascript://" data-toggle="popover" title="MASTERPIECES OF WESTERN MUSIC" data-trigger="focus" data-content="Analysis and discussion of representative works from the Middle Ages to the present.">W1123</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="EURPN LIT-PHILOS MASTRPIECS II" data-trigger="focus" data-content="Taught by members of the Departments of Classics; English and Comparative Literature; French; German; Italian; Middle Eastern, South Asian, and African Studies; Philosophy; Religion; Slavic Languages; and Spanish; as well as members of the Society of Fellows. Major works by over twenty authors, ranging in time, theme, and genre, from Homer to Virginia Woolf. Students are expected to write at least two papers, to complete two examinations each semester, and to participate actively in class discussions.">HUMA C1002</a> <br> <a href="javascript://" data-toggle="popover" title="CONTEMP WESTRN CIVILIZATION II" data-trigger="focus" data-content="Taught by members of the Departments of Anthropology, Classics, English and Comparative Literature, French, German, History, Middle East and Asian Languages and Cultures, Philosophy, Political Science, Religion, Slavic Languages, and Sociology; and members of the Society of Fellows. A study in their historical context of major contributions to the intellectual traditions that underpin contemporary civilization. Emphasis is on the history of political, social, and philosophical thought. Students are expected to write at least three papers to complete two examinations, and to participate actively in class discussions.">COCI C1102</a> <br> <strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="Options for global core at http://bulletin.columbia.edu/columbia-college/core-curriculum/global-core-requirement/">Global Core</a> <br> <br> <a href="javascript://" data-toggle="popover" title="PRINCIPLES OF ECONOMICS" data-trigger="focus" data-content="Corequisites: ECON W1155 recitation section with the same instructor. How a market economy determines the relative prices of goods, factors of production, and the allocation of resources and the circumstances under which it does it efficiently. Why such an economy has fluctuations and how they may becontrolled.">ECON W1105</a> <br><strong>or</strong> <a href="javascript://" data-toggle="popover" title="Course Description" data-trigger="focus" data-content="PRINCIPLES OF ECONOMICS-DISC">W1155 recitation</a></td> 
+                </tr>
+                <tr id="nonRequiredTech">
+                <td><strong>CHEM. ENG <br> REQUIREMENT</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript://" data-toggle="popover" title="INTRO TO CHEMICAL ENGINEERING" data-trigger="focus" data-content="Prerequisites: First-year chemistry and physics or equivalent. This course serves as an introduction to the chemical engineering profession. Students are exposed to concepts used in the analysis of chemical engineering problems. Rigorous analysis of material and energy balances on open and closed systems is emphasized. An introduction to important processes in the chemical and biochemical industries is provided.">CHEN E2100</a>
+                  <td></td>
+                </tr>
+                <tr>
+                <td><strong>COMPUTER <br> SCIENCE</strong></td>
+                  <td colspan=4><a href="javascript://" data-toggle="popover" title="INTRO TO COMP FOR ENG/APP SCI" data-trigger="focus" data-content="An interdisciplinary course in computing intended for first year SEAS students. Introduces computational thinking, algorithmic problem solving and Python programming with applications in science and engineering. Assumes no prior programming background.">ENGI E1006</a><br> any semester</td>
+                </tr>
+                <tr>
+                <td><strong>PHYSICAL <br> EDUCATION</strong></td>
+                  <td><a href="javascript://" data-toggle="popover" title="PHYSICAL ED" data-trigger="focus" data-content="The times listed in the on-line Directory of Classes are the actual class times for each time preference. Students should allow additional time for showering, dressing, equipment exchange, and travel to next class. A description of the scheduled activities for each time preference is posted on the department Web site, http://www.dodgefitnesscenter.com.">C1001</a></td>
+                  <td><a href="javascript://" data-toggle="popover" title="PHYSICAL ED" data-trigger="focus" data-content="The times listed in the on-line Directory of Classes are the actual class times for each time preference. Students should allow additional time for showering, dressing, equipment exchange, and travel to next class. A description of the scheduled activities for each time preference is posted on the department Web site, http://www.dodgefitnesscenter.com.">C1002</a></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                <td><strong>THE ART <br> OF <br> ENGINEERING</strong></td>
+                  <td colspan=2><a href="javascript://" data-toggle="popover" title="THE ART OF ENGINEERING" data-trigger="focus" data-content="Core requirement for all entering SEAS students. This course is a bridge between the science-oriented, high school way of thinking and the engineering point of view. Fundamental concepts of math and science are reviewed and re-framed in an engineering context, with numerous examples of each concept drawn from all disciplines of engineering represented at Columbia. Non-technical issues of importance in professional engineering practice such as ethics, engineering project management, and societal impact are addressed. Lab fee: $350.">E1102</a> <br> either semester</td>
+                  <td></td>
+                  <td></td>                
+                </tr>
+            </tbody>
+          </table>
+          <br>
+          <p>Important Notes:</p>
+          <ul>
+          <li>CHEN E2100 should be taken in Semester III, but may be moved upon adviser's approval to Semester V if CHEM C3543: Organic chemistry lab is taken in Semester III. This course fulfills the SEAS professional engineering elective requirement.</li>
+
+          </ul>
+          </div>
+
+          
+          <div id="secondTwo" class = "col-lg-6">
+          <table id="myTable" width="100%" border = "1">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+          <col width="15px">
+
+            <thead>
+              <tr>
+              <th></th>
+                <th><span>5</span></th>
+                <th><span>6</span></th>
+                <th><span>7</span></th>
+                <th><span>8</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td><strong>REQUIRED <br> COURSES</strong></td>
+                <td><a href="javascript://" data-toggle="popover" title="TRANSPORT PHENOMENA I" data-trigger="focus" data-content="
+                Prerequisites: mechanics, vector calculus, ordinary differential equations. Corequisites: CHEN E3020 Analysis of momentum and energy transport processes at molecular, continuum and system scales for systems of simple fluids (gases and low molecular-weight liquids).  Molecular-level origins of fluid viscosity, continuum fluid mechanics analysis of laminar lfows, and the resulting dimensionless correlations of kinematic and mechanical characteristics of a system needed for engineering design (e.g., friction factor vs. Reynolds number correlations).  Molecular origins of fluid conductivity, continuum heat transfer analysis, and the resulting correlations of a system's thermal characteristics useful in engineering design (e.g., Nusselt number correlations).  Examples are reviewed of analyses typical in chemical engineering technologies.  Essential mathematical methods are reviewed or introduced in context.
+                ">CHEN E3110</a> <hr> <a href="javascript://" data-toggle="popover" title="PRIN-CHEM ENGIN-THERMODYNAMICS" data-trigger="focus" data-content="Prerequisites: CHEM C1403 Corequisites: CHEN E3020 Introduction to thermodynamics. Fundamentals are emphasized: the laws of thermodynamics are derived and their meaning explained and elucidated by applications to engineering problems. Pure systems are treated, with an emphasis on phase  equilibrium.">CHEN E3010</a> <hr> <a href="javascript://" data-toggle="popover" title="ANALYSIS OF CHEM ENGIN PROBLMS" data-trigger="focus" data-content="Prerequisites: vector calculus, ordinary differential equations. Corequisites: CHEE E3010, CHEN E3110. Computational solutions of chemical engineering problems in thermodynamics, transport phenomena, and reaction design.">CHEN E3020</a> </td>
+                <td><a href="javascript://" data-toggle="popover" title="TRANSPORT PHENOMENA II" data-trigger="focus" data-content="Prerequisites: CHEN E3110x Corequisites: CHEN E3220 Developments in Transport I are extended to handle turbulence.  Topics include: Turbulent energy cascade, wall-bounded turbulent shear flow, time-averaging of the equations of change, Prandtl's mixing length hypothesis for the Reynolds stress, the Reynolds analogy, continuum modeling of turbulent flows and heat transfer processes, friction factor, and Nusselt number correlations for turbulent conditions.  Then macroscopic (system-level) mass, momentum, and energy balances for one-component systems are developed and applied to complex flows and heat exchange processes. The final part focuses on mass transport in mixtures of simple fluids: Molecular-level origins of diffusion phenomena, Fick's law and its multicomponent generalizations, continuum-level framework for mixtures and its application to diffusion dominated processes, diffusion with chemical reaction, and forced/free convection mass transport.">CHEN E3120</a> <hr> <a href="javascript://" data-toggle="popover" title="CHEM ENGINEERNG THERMODYNAMICS" data-trigger="focus" data-content="Prerequisites: CHEE E3010 and CHEN E3100. Corequisites: CHEN E3220. This course deals with fundamental and applied thermodynamic principles that form the basis of chemical engineering practice. Topics include phase equilibria, methods to treat ideal and non-ideal mixtures, and estimation of properties.">CHEN E3210</a> <hr> <a href="javascript://" data-toggle="popover" title="REACTOR KINETICS/REACTOR DESGN" data-trigger="focus" data-content="Prerequisites: CHEE E3010. Reaction kinetics, applications to the design of batch and continuous reactors. Multiple reactions, non-isothermal reactors. Analysis and modeling of reactor behavior.">CHEN E4230</a>   </td>
+                <td><a href="javascript://" data-toggle="popover" title="PRINCIPLES OF PROCESS DESIGN" data-trigger="focus" data-content="Prerequisites: CHEN E2100, CHEN E4140. The practical application of chemical engineering principles for the design and economic evaluation of chemical processes and plants.  Use of ASPEN Plus for complex material and energy balances of real processes.  Students are expected to build on previous coursework to identify creative solutions to two design projects of increasing complexity.  Each design project culminates in an oral presentation, and in the case of the second project, a written report.">CHEN E4500</a> <hr> <a href="javascript://" data-toggle="popover" title="ENGINEERING SEPARATIONS" data-trigger="focus" data-content="Prerequisites: CHEN E3100, E3120, and E3210, or instructor's permission. Design and analysis of unit operations employed in chemical engineering separations.  Fundamental aspects of single and multistaged operations using both equilibrium and rate-based methods.  Examples include distillation, absorption and stripping, extraction, membranes, crystallization, bioseparations, and environmental applications.">CHEE E4140</a> </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><strong>REQUIRED LABS</strong></td>
+                <td><a href="javascript://" data-toggle="popover" title="Organic Chemistry lab" data-trigger="focus" data-content=" ">CHEN C3543</a> </td>
+                <td></td>
+                <td><a href="javascript://" data-toggle="popover" title="CHEMICAL ENGINEERING CONTROL" data-trigger="focus" data-content="Prerequisites: Material and energy balances. Ordinary differential equations including Laplace transforms. Reactor Design. An introduction to process control applied to chemical engineering through lecture and laboratory. Concepts include the dynamic behavior of chemical engineering systems, feedback control, controller tuning, and process stability.">CHEN E4300</a> </td>
+                <td><a href="javascript://" data-toggle="popover" title="CHEM ENG & APPLIED CHEM LAB" data-trigger="focus" data-content="Prerequisites: Completion of core chemical engineering curricula through the fall semester of senior year (includes: CHEN E3110, E3120, E4230, E3100, E3010, E3210, E4140, E4500), OR instructor's permission. The course emphasizes active, experiment-based resolution of open-ended problems involving use, design, and optimization of equipment, products, or materials. Under faculty guidance students formulate, carry out, validate, and refine experimental procedures, and present results in oral and written form. The course develops analytical, communications, and cooperative problem-solving skills in the context of problems that span from traditional, large scale separations and processing operations to molecular level design of materials or products. Sample projects include: scale up of apparatus, process control, chemical separations, microfluidics, surface engineering, molecular sensing, and alternative energy sources. Safety awareness is integrated throughout the course.">CHEN 3810</a> </td>
+              </tr>
+              <tr>
+                <td><strong>TECH ELECTIVES</strong></td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>12 points</td>
+              </tr>
+              <tr>
+                <td><strong>NONTECH ELECTIVES</strong></td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td>3 points</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><strong>TOTAL POINTS</strong></td>
+                <td>18</td>
+                <td>15</td>
+                <td>16</td>
+                <td>15</td>
+              </tr>
+
+            </tbody>
+          </table> 
+          <br>
+          <p>Important Notes:</p>
+          <ul>
+          <li>Organic chemistry lab may be taken in Semester III with adviser's permission if CHEN E2100: Material and energy balances, is taken in Semester V</li>
+          <li>The total of 21 points (7 courses) of required technical electives must include 5 engineering courses, two of which must be in chemical engineering and one must be outside chemical engineering, and 6 points (2 courses) of "advanced science" (i.e. courses in chemistry, physics, biology, and certain engineering courses, one of which must be outside engineering)</li>
+          </ul>
+          </div><!-- end of chemE courses column 2 --> 
+          
+        </div> <!-- end of chemE courses row  --> 
+
+
+
+
+        </div> <!--ends main container of site-->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow79.js"></script>
+
+</body>
+</html>
